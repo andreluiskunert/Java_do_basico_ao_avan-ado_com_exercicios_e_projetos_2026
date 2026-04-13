@@ -1,0 +1,22 @@
+§ Descreve principais pontos da Linguagem de Java;
+ o metodo printLn [{
+	"resource": "/home/desenvolvedor-full-stack/Home/Hora de Codar_2026/Java do básico ao avançado - com exercícios e projetos/LinguagemJava_2026/Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026/secao1/HelloWorld.java",
+	"owner": "_generated_diagnostic_collection_name_#4",
+	"code": "67108964",
+	"severity": 8,
+	"message": "The method printLn(String) is undefined for the type PrintStream",
+	"source": "Java",
+	"startLineNumber": 5,
+	"startColumn": 16,
+	"endLineNumber": 5,
+	"endColumn": 23,
+	"modelVersionId": 7,
+	"origin": "extHost1"
+}] 
+package secao1;
+
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.printLn("Good evening my friends dev");
+  }
+}
