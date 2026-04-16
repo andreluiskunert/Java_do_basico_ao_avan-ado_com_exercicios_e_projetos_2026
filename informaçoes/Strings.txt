@@ -1,0 +1,7 @@
+Strings
+●Strings são sequências de caracteres usadas para armazenar e manipular texto;
+●Classe String: Em Java, as Strings são objetos da classe String e oferecem métodos
+para manipulação de texto;
+●Uma String não pode ser alterada, qualquer modificação gera uma nova String;
+●Podemos concatenar (unir) duas strings com o operador +;
+●Vamos testar!

@@ -1,0 +1,16 @@
+Comentário em Java
+●
+Comentários são usados para explicar o código, tornando-o mais fácil de entender
+para outros desenvolvedores;
+●
+Comentários não afetam a execução do programa, são completamente ignorados pelo
+compilador;
+●
+Tipos de comentários:
+○Comentário de linha: Usado para breves explicações em uma linha (// Comentário).
+○Comentário de bloco: Explicações mais longas em várias linhas (/* Comentário */).
+○Comentário de documentação: Usado para gerar documentação do código (/** Comentário
+*/).
+●
+Comentários ajudam a manter o código legível e compreensível, facilitando a
+manutenção;
