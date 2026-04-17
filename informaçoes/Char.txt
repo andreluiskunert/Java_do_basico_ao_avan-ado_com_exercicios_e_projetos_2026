@@ -1,0 +1,5 @@
+●char é um tipo de dado primitivo que armazena um único caractere;
+●O char pode armazenar qualquer caractere Unicode, incluindo letras, números e
+símbolos;
+●Ocupa 2 bytes de memória, permitindo armazenar 65.536 caracteres diferentes;
+●Vamos testar!

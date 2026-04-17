@@ -19,5 +19,23 @@ public  class Variavel {
 
 System.out.println(grandNumero +1);
 System.out.println(populacoaMundial);
+//  6_Tipos de String
+// quinta-feira,16/04/2026
+String fisrtName = "Andre Luis";
+String lastName ="Kunert";
+System.out.println("Hello Guys, my name is " + fisrtName + ",my last name is  " + lastName);
+System.out.println("----");
+System.out.println("my name is " + fisrtName);
+System.out.println("my last name is " + lastName);
+// concatenação = operador + nas strings,pra uni-las
+// System.out.println(fullName);
+
+// 5ª Char
+   char letra ='A';
+   System.out.println(letra);
+   String letra2 = "A";
+   System.out.println(letra2);
+   char simbolo = '$';
+   System.out.println(simbolo);
    }
 }
