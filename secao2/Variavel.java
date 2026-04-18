@@ -37,5 +37,22 @@ System.out.println("my last name is " + lastName);
    System.out.println(letra2);
    char simbolo = '$';
    System.out.println(simbolo);
+   System.out.println( );
+   // ---//
+// 4ª Int
+int n = 43;
+System.out.println("minha idade é: " + n + " anos ;");
+System.out.println("Este ano farei de : " + (n + 1) + " anos de idade");
+System.out.println("Daqui algum tempo estarei no Canadá em Vancouve, com que idade: " + (n * 2) + " anos;");
+System.out.println(" já tive de idade: " + (n / 2) + " anos de idade");
+int soma = n + 12;
+System.out.println("Ontem será que estarei quanto tiver: " + soma + " anos de idade");
+System.out.println( );
+// 3ª Long
+ long populacoaMundialAtual = 7800000l;
+  System.out.println("A população Mundial é " + populacoaMundialAtual +"m²");
+  long grandNumeroAtual = 2_000_000l;
+  System.out.println("A população Mundial irá aumentar mais "+ grandNumeroAtual + ",puxa vida...kkkkk");
+
    }
 }

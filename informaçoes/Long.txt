@@ -1,0 +1,15 @@
+Long
+●
+long é um tipo de dado primitivo usado para armazenar números inteiros muito
+grandes;
+●
+Ocupa 8 bytes de memória, permitindo armazenar valores de
+-9.223.372.036.854.775.808 a 9.223.372.036.854.775.807;
+●
+Ideal para cálculos financeiros, contagem de tempo, ou quando o tipo int não é
+suficiente;
+●Valores literais do tipo long devem ser seguidos por L (maiúsculo) para indicar o tipo;
+●O sublinhado pode ser usado para melhorar a legibilidade em números longos,
+separando grupos de dígitos (Ex: 123_456_789_012_345L);
+●
+Vamos testar!

@@ -1,0 +1,6 @@
+Int
+●int é um tipo de dado primitivo utilizado para armazenar números inteiros;
+●Tamanho fixo: Ocupa 4 bytes de memória, permitindo armazenar valores de
+-2.147.483.648 a 2.147.483.647;
+●Ideal para operações aritméticas e contadores em loops;
+●Vamos testar!
