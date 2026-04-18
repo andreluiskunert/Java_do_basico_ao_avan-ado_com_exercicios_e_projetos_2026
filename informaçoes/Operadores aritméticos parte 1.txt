@@ -1,0 +1,7 @@
+Operadores aritméticos parte 1
+●Adição (+): Soma de dois valores;
+●Subtração (-): Subtração de um valor pelo outro;
+●Multiplicação (*): Multiplicação de dois valores;
+●Divisão (/): Divisão de um valor pelo outro;
+●Módulo (%): Resto da divisão de dois valores;
+●Vamos testar!
