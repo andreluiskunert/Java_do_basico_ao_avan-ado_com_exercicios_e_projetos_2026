@@ -1,0 +1,12 @@
+Type casting
+●
+Casting implícito (widening): Converte automaticamente tipos menores para tipos
+maiores (por exemplo, int para long), sem perda de dados;
+●
+Casting explícito (narrowing): Necessário quando se converte tipos maiores para tipos
+menores (por exemplo, double para int), podendo resultar em perda de dados;
+●
+Para realizar um casting explícito, é necessário especificar o tipo de destino entre
+parênteses;
+●
+Vamos testar!

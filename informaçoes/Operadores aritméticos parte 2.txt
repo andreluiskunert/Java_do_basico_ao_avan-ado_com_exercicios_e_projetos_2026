@@ -1,0 +1,6 @@
+Operadores aritméticos parte 2
+●Incremento (++): Incrementa o valor de uma variável em 1;
+●Decremento (--): Decrementa o valor de uma variável em 1;
+●Atribuição aditiva (+=): Soma e atribui o resultado a uma variável;
+●Atribuição subtrativa (-=): Subtrai e atribui o resultado a uma variável;
+●Vamos testar!

@@ -75,7 +75,7 @@ double valorComD = 2026.2D;
 System.out.println("estou no periodo da graduação Tecnologica em Desenvolvimento Full Stack, é o periodo:"+ valorComD+  ";");
 System.out.println("-/-/-//====================================================================================" );
 System.out.println("Operadores aritméticos parte 1");
-// Operadores aritméticos parte 1
+// 09_Operadores aritméticos parte 1
 int soma2 = 12 + 5;
 System.out.println("soma2 é :" + soma2);
 System.out.println(22 + 4);
@@ -87,6 +87,38 @@ System.out.println(10.0 / 2.5);
 System.out.println(10 / 3 );
 System.out.println(10.0 / 3 );
 System.out.println(10 % 3);
+System.out.println("-/-/-//====================================================================================" );
+System.out.println("Operadores aritméticos parte 2");
+// 10_Operadores aritméticos parte 2_Sabado,18/04/2026_De noite
+int x = 5;
+x++;
+System.out.println("O x++ é:"+ x + ";" );
+int y = 5;
+y--;
+System.out.println("O y-- é: "+ y + ";");
+int a = 10;
+a += 5;
+System.out.println("O valor de a += 5 é "+ a + ";");
+int b = 10;
+b-=5;
+System.out.println("O valor de b-=5 é " + b + ";");
+
+System.out.println("-/-/-//====================================================================================" );
+System.out.println("Type casting");
+// 11_Type casting_Sabado,18/04/2026_De noite  
+int numero02 =43;
+long numeroLong = numero02;
+System.out.println("O numero02 em long é:" + numeroLong + ";");
+double numeroDouble = numero02;
+System.out.println("O numero02 em double é:" + numeroDouble + ";");
+double valorDouble = 9.78;
+System.out.println("O valorDouble é :" + valorDouble + ";");
+int valorInt = (int) valorDouble;
+System.out.println("Convertendo de Int pra Double : " + valorInt + ";");
+// casting de char
+char letra02 ='A';
+int codigoAscii = (int) letra02;
+System.out.println("O valor de A na tabela ASCII é : " + codigoAscii + ";");
 
 
    }
