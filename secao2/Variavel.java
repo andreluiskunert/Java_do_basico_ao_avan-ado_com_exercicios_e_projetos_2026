@@ -119,6 +119,45 @@ System.out.println("Convertendo de Int pra Double : " + valorInt + ";");
 char letra02 ='A';
 int codigoAscii = (int) letra02;
 System.out.println("O valor de A na tabela ASCII é : " + codigoAscii + ";");
+System.out.println("-/-/-//====================================================================================" );
+System.out.println("Constantes em Java com final");
+// Terça-feira, 21/04/2026_De Tarde
+// 12_Constantes
+final int DIAS_DA_SEMANA = 7;
+System.out.println("O dias_da_semana e igual 7:"+ DIAS_DA_SEMANA +";");
+// // final int DIAS_DA_SEMANA += 7;
+// final teste;
+// System.out.println(teste);
+// [{
+// 	"resource": "/home/desenvolvedor-full-stack/Home/Hora de Codar_2026/Java do básico ao avançado - com exercícios e projetos/LinguagemJava_2026/Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026/secao2/Variavel.java",
+// 	"owner": "_generated_diagnostic_collection_name_#3",
+// 	"code": "1610612976",
+// 	"severity": 8,Inferência de Tipo com var em Java
+// 	"message": "Syntax error, insert \"VariableDeclarators\" to complete LocalVariableDeclaration",
+// 	"source": "Java",
+// 	"startLineNumber": 129,
+// 	"startColumn": 7,
+// 	"endLineNumber": 129,
+// 	"endColumn": 12,
+// 	"modelVersionId": 160,
+// 	"origin": "extHost1"
+// }]
+System.out.println("-/-/-//====================================================================================" );
+System.out.println("Inferência de Tipo com var em Java");
+// 13_Var
+  var z = 15;
+  System.out.println("o valor do var z é : " +z+";" );
+//   z = "teste";
+  z = 5;
+    System.out.println("o valor do var z agora é : " +z+";" );
+  var texto1 = "# good Alfternoon, my friend...";
+  System.out.println(texto1);
+  var Programar = 150.0000;
+  System.out.println("Bora la codar com Java pra ganhar futuramente, "+ Programar + "por anos no Canada_Vancouver"
+  );
+ 
+// 14_A classe Scanner
+
 
 
    }

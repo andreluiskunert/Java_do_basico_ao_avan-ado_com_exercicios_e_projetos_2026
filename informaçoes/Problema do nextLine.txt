@@ -1,0 +1,7 @@
+Problema do nextLine
+●nextLine() lê a linha inteira até encontrar um Enter;
+●Problema ocorre ao usar nextLine() após nextInt(), nextDouble(), etc;
+●nextLine() captura o caractere Enter remanescente, resultando em uma leitura vazia;
+●Isso faz o programa parecer "pular" a entrada de texto;
+●Solução: adicionar um nextLine() extra após a leitura de números;
+●Vamos ver na prática;

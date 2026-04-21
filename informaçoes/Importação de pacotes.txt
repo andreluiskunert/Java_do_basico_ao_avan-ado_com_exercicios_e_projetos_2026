@@ -1,0 +1,9 @@
+Importação de pacotes
+●
+Pacotes organizam classes e interfaces relacionadas, melhorando a estrutura do
+código;
+●Importar classes de pacotes externos, como Scanner, é necessário para utilizá-las;
+●A importação de pacotes previne conflitos de nomes entre classes em projetos
+grandes;
+●Permite a reutilização de código existente, acelerando o desenvolvimento;
+●Facilita a manutenção e a leitura do código ao manter uma organização lógica;

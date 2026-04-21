@@ -1,0 +1,6 @@
+Fechamento do scanner
+●O Scanner consome recursos de entrada, como fluxo de dados do teclado;
+●Fechar o Scanner libera esses recursos, evitando problemas de performance;
+●Deixar o Scanner aberto pode causar vazamentos de memória ou travamentos;
+●close() é uma boa prática recomendada após a leitura dos dados;
+●O fechamento do Scanner ajuda a manter a aplicação eficiente e estável;

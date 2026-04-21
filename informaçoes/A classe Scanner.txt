@@ -1,0 +1,13 @@
+A classe Scanner
+●
+A classe Scanner é utilizada para ler a entrada de dados do usuário via
+console/terminal;
+●
+Parte do pacote java.util: Para usar o Scanner, é necessário importar a classe do
+pacote java.util;
+●Scanner pode ler diferentes tipos de dados, como int, double, String, etc;
+●Métodos comuns:
+○nextLine(): Lê uma linha inteira de texto;
+○nextInt(): Lê um valor inteiro;
+○nextDouble(): Lê um valor decimal (ponto flutuante);
+○next() : Lê uma única palavra;

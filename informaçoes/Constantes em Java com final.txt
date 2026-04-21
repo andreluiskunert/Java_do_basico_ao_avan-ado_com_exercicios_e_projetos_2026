@@ -1,0 +1,11 @@
+Constantes em Java com final
+●
+final: Define uma variável como constante, impedindo que seu valor seja alterado
+após a inicialização;
+●Uma vez atribuído, o valor não pode ser modificado;
+●Boas práticas: Usado para valores que não devem mudar durante a execução do
+programa, como PI ou taxas de juros;
+●
+Convenção de nomes: Constantes geralmente são nomeadas em letras maiúsculas,
+com palavras separadas por sublinhados (_);
+Terça-feira, 21/04/2026_De Tarde

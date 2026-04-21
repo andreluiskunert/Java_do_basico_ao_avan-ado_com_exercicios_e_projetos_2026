@@ -1,0 +1,16 @@
+Inferência de Tipo com var em Java
+●
+var: Introduzido no Java 10, permite ao compilador inferir o tipo da variável com base
+no valor atribuído;
+●
+Reduz a necessidade de escrever tipos longos e complexos, aumentando a
+legibilidade do código;
+●
+Tipo estático: Embora o tipo seja inferido, ele é fixo após a atribuição e não pode ser
+alterado;
+●
+Regras: Deve ser inicializado no momento da declaração, e não pode ser usado para
+variáveis não inicializadas;
+●
+Boas práticas: Útil para tipos complexos ou quando o tipo é óbvio a partir do
+contexto;
