@@ -1,0 +1,8 @@
+Operadores de comparação
+●== (Igual a): Verifica se dois valores são iguais;
+●!= (Diferente de): Verifica se dois valores são diferentes;
+●> (Maior que): Verifica se o valor à esquerda é maior que o valor à direita;
+●< (Menor que): Verifica se o valor à esquerda é menor que o valor à direita;
+●>= (Maior ou igual a): Verifica se o valor à esquerda é maior ou igual ao valor à direita;
+●<= (Menor ou igual a): Verifica se o valor à esquerda é menor ou igual ao valor à
+direita;

@@ -1,0 +1,13 @@
+O que é boolean?
+●
+boolean é um tipo de dado primitivo em Java que pode armazenar apenas dois
+valores: true ou false;
+●
+Utilizado para controlar o fluxo de execução em estruturas de controle como if, while,
+e for;
+●
+Suporta operadores lógicos como && (AND), || (OR), e ! (NOT) para combinar e
+inverter valores booleanos;
+●Uma expressão booleana é qualquer expressão que resulta em um valor true ou false;
+●Embora seja representado como true ou false no código, internamente é tratado como
+1 (true) ou 0 (false);
