@@ -1,0 +1,4 @@
+Tabela verdade
+●
+A tabela verdade simula todas as combinações possíveis dos operadores lógicos, e
+exibe os resultados:

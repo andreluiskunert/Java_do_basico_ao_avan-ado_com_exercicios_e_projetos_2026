@@ -1,0 +1,5 @@
+Operadores lógicos
+●&& (E lógico): Retorna true se ambas as condições forem verdadeiras;
+●|| (OU lógico): Retorna true se pelo menos uma das condições for verdadeira;
+●! (NÃO lógico): Inverte o valor lógico; retorna true se a condição for falsa e vice-versa;
+●Combinação: Pode combinar múltiplas condições em uma única expressão lógica;
