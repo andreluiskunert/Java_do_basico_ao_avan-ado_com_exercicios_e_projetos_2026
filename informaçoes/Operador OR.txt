@@ -1,0 +1,8 @@
+Operador OR
+●
+O operador || (OR lógico) retorna true se pelo menos uma das condições for
+verdadeira;
+●Sintaxe: Condição1 || Condição2;
+●Curto-circuito: Se a primeira condição for true, a segunda condição não é avaliada;
+●Uso comum: Verificação de múltiplas condições onde apenas uma precisa ser
+verdadeira;

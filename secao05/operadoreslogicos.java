@@ -28,36 +28,26 @@ public class operadoreslogicos {
         }
 
         // 9 - OR
+//  Terça-feira,28/04/2026_De noite
+boolean estaChuvendo = true;
+boolean temGuardaChuva = true;
+System.out.printf("Como está o tempo hoje"+ estaChuvendo+ "chovendo" + temGuardaChuva +"sempre levo guarda chuva", estaChuvendo || temGuardaChuva);
+System.out.println( );
+System.out.println(false || false);
+System.out.println( );
+System.out.println(10 > 20 || 100 == idade);
+int idade2 = 16;
+boolean ehMenbro = true;
+ // O usuário pode participar do clube
+        // ele precisa ter > 16 anos OU ser membr
+ if (idade2 > 16 || ehMenbro) {
+  System.out.println("Pode entrar"); 
+    
+ } else {
+    System.out.println("Acesso negado...voltei com seus pais ou responsaveis");
+ }
 
-        boolean estaChuvendo = false;
-        boolean temGuardaChuva = true;
-
-        System.out.println(estaChuvendo || temGuardaChuva);
-
-
-        System.out.println(false || false);
-
-        System.out.println(10 > 20 || 100 == idade);
-
-        int idade2 = 16;
-        boolean ehMembro = false;
-
-        // O usuário pode participar do clube
-        // ele precisa ter > 16 anos OU ser membro
-
-        if(idade2 > 16 || ehMembro) {
-            System.out.println("Você pode entrar");
-        } else {
-            System.out.println("Entrada negada!");
-        }
-
-        // 10 - NOT
-        System.out.println(estaChuvendo);
-        System.out.println(!estaChuvendo);
-
-        System.out.println(estaChuvendo || !temGuardaChuva);
-
-        System.out.println(!(estaChuvendo || !temGuardaChuva));
-
+// 10 - NOT
+       
     }
 }
