@@ -31,7 +31,7 @@ public class operadoreslogicos {
 //  Terça-feira,28/04/2026_De noite
 boolean estaChuvendo = true;
 boolean temGuardaChuva = true;
-System.out.printf("Como está o tempo hoje"+ estaChuvendo+ "chovendo" + temGuardaChuva +"sempre levo guarda chuva", estaChuvendo || temGuardaChuva);
+System.out.printf("Como está o tempo hoje " + estaChuvendo+ " chovendo " + temGuardaChuva +"sempre levo guarda chuva", estaChuvendo || temGuardaChuva);
 System.out.println( );
 System.out.println(false || false);
 System.out.println( );
@@ -48,6 +48,13 @@ boolean ehMenbro = true;
  }
 
 // 10 - NOT
+// Quarta-feira,29/04/2026_De noite 
+  System.out.println(estaChuvendo);
+  System.out.println(!estaChuvendo);
+   System.out.println(estaChuvendo || !temGuardaChuva);
+
+        System.out.println(!(estaChuvendo || !temGuardaChuva));
+
        
     }
 }
