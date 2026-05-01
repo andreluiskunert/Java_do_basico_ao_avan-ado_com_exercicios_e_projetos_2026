@@ -122,6 +122,32 @@ System.out.println("===##===##===##====##==##==");
 
        System.out.println("===##===##===##====##===##===");
        System.out.println("Exercício 5");
+    //    Sexta-feira, 01/05/2026_De manhã "aproveitando o feiradão..."
+         System.out.println("Insira um número:");
+         int n = scanner.nextInt();
+         if (n >= 10 && n <= 20) {
+            System.out.println("Dentro do Intervalo");
+         }else{
+            System.out.println("Fora do Intervalo...");
+         }
+           System.out.println("===##===##===##====##===##===");
+       System.out.println("Exercício 6");
+       
+  System.out.println("Inserir um letra das vocais:");
+   char letra = scanner.next().toLowerCase().charAt(0);
+       switch (letra) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println("Vogal");
+                break;
+            default:
+                System.out.println("Consoante");
+                break;
+        
+      }
        scanner.close();
         System.out.println("===> The End <======");
     }
