@@ -1,0 +1,12 @@
+●
+Uma instrução que finaliza a execução de uma função e, opcionalmente, devolve um
+valor ao ponto onde a função foi chamada;
+●
+Finalização de Função: Quando o return é executado, a função para de executar, e o
+controle é devolvido ao chamador;
+●
+Tipos de Retorno: O return pode retornar valores de qualquer tipo, incluindo tipos
+primitivos, objetos, ou nenhum valor (void);
+●
+O return permite que funções realizem cálculos ou operações e enviem o resultado
+de volta para ser utilizado em outras partes do programa;

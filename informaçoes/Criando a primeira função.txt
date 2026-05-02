@@ -1,0 +1,13 @@
+Criando a primeira função
+●
+Normalmente uma função em Java é definida com um tipo de retorno, um nome e
+pode ou não receber parâmetros;
+●
+A função pode ser criada sem parâmetros e sem retorno, ideal para tarefas simples
+que não requerem entrada ou saída;
+●
+Sintaxe Básica: Consiste em um cabeçalho que inclui o tipo de retorno (void para sem
+retorno) e o corpo da função, onde o código é executado;
+●
+Chamando a Função: A função é invocada pelo seu nome, e o código dentro dela é
+executado sempre que chamada;

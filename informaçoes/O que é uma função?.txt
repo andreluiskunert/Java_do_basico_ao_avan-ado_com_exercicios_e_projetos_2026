@@ -1,0 +1,13 @@
+O que é uma função?
+●
+Um bloco de código que realiza uma tarefa específica e pode ser chamado para ser
+executada;
+●Divide o código em partes menores, tornando-o mais organizado e fácil de manter;
+●Permite reutilizar código em diferentes partes do programa sem precisar reescrever
+as mesmas instruções;
+●
+Parâmetros e Retorno: Pode receber dados de entrada (parâmetros) e retornar um
+resultado após a execução;
+●
+As variáveis declaradas dentro de uma função são locais e não afetam o restante do
+programa;

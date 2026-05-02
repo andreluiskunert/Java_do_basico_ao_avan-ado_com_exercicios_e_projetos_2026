@@ -1,0 +1,14 @@
+Diferença entre a Função main e Outras Funções
+●
+●
+Função main:
+○É o ponto de entrada do programa, onde a execução começa;
+○Deve ter a assinatura exata public static void main(String[] args);
+○Todo programa Java precisa de uma função main para ser executado;
+○A função main pode chamar outras funções e métodos dentro do programa;
+Outras Funções:
+○Criadas para dividir o código em partes menores e gerenciáveis;
+○Podem ter diferentes tipos de retorno, nomes, e receber parâmetros.;
+○Podem ser chamadas várias vezes em diferentes partes do programa;
+○São executadas apenas quando chamadas pelo código, ao contrário do main, que é
+executado automaticamente;

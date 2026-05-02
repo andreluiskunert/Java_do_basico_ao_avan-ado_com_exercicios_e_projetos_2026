@@ -1,0 +1,16 @@
+Argumentos em funções
+●
+Dados que você passa para uma função ao chamá-la, permitindo que a função
+processe informações específicas;
+●
+Parâmetros são variáveis definidas na assinatura da função para receber os
+argumentos;
+●
+Funções podem receber nenhum, um ou vários argumentos, dependendo da tarefa
+que realizam;
+●
+Argumentos tornam as funções mais flexíveis e reutilizáveis em diferentes
+contextos com dados diferentes;
+●
+Tipos de Argumentos: Podem ser de qualquer tipo primitivo (int, double, etc.) ou
+objetos;
