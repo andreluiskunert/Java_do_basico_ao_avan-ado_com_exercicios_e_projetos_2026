@@ -1,4 +1,4 @@
-package secao2;
+package secao02;
 // Domingo, 19/04/2026_De noite
 public class Exercicios {
     

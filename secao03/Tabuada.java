@@ -1,4 +1,4 @@
-package secao3;
+package secao03;
 // Projeto tabuada
 // Receber um número pelo scanner, exibir a tabuada do mesmo
 // Terça-feira,21/04/2026_De noite

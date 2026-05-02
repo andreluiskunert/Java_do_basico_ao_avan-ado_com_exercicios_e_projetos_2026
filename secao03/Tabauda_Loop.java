@@ -1,4 +1,4 @@
-package secao3;
+package secao03;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package secao2;
+package secao02;
 import java.util.Scanner;
 
 public class TesteScanner {

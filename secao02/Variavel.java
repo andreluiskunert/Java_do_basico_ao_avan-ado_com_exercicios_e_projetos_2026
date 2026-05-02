@@ -1,4 +1,4 @@
-package secao2;
+package secao02;
 
 public  class Variavel {
    public static void main(String[] args) {
