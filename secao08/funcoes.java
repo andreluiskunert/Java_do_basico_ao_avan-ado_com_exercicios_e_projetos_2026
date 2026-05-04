@@ -13,7 +13,14 @@ public class funcoes {
         System.out.println("O ano dobrado  é "+ anoDobrado + "formado como Desenvolvedor Full Stack pela Estácio");
         dobrar(numero);
         primeiraPosgraduacao(" iniciando minha pos em Engenharia_de_Software");
-    }
+        // ---
+        String r1 = verificarPar(numero);
+        String r2 = verificarPar(3);
+        System.out.println(r1+""+ r2);
+        // ===
+        int x = dobrar(soma2(2, 5));
+        System.out.println(x);
+      }
    public static void saudacao(){
       System.out.println("ola... essa minha 1ª função");
     }
@@ -36,5 +43,16 @@ public class funcoes {
   }
   public static void primeiraPosgraduacao(String ps) {
     System.out.println(" iniciando minha pos em Engenharia_de_Software... Querendo o Senhor...");
+  }
+  // Domingo, 03/05/2026_De noite
+  public static String verificarPar(int n) {
+    if (n % 2 == 0) {
+       return "O número "+ n + "é par";
+    }else{
+       return "O número "+ n + "é impar";
+    }
+  }
+  public static int soma2(int a, int b){
+    return a +b;
   }
 }
