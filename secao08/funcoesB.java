@@ -1,6 +1,7 @@
 package secao08;
 
 public class funcoesB {
+    static int globalVar = 25;
     public static void main(String[] args) {
         // Segunda-feira, 04/05/2026_De noite
         System.out.println(" 5ª - Funções com condicionais:");
@@ -13,6 +14,7 @@ public class funcoesB {
         System.out.println("Que dia é o dia 5?"+ obterDiaDaSemana(3));
         System.out.println("Que dia é o dia 5?"+ obterDiaDaSemana(5));
         System.out.println("Que dia é o dia 7?"+ obterDiaDaSemana(7));
+        
      System.out.println("===///===///========////====");
      //
      System.out.println(" 7ª System exit");
@@ -20,7 +22,28 @@ public class funcoesB {
 
         System.out.println("Oi!");
      System.out.println("===///===///========////====");
-      System.out.println("The End");
+     System.out.println("Documentando funções:");
+     System.out.println("\n" + //
+                  "    /**\n" + //
+                  "     * \n" + //
+                  "     * Calcula a média de três números inteiros\n" + //
+                  "     * \n" + //
+                  "     * @param num1 O primeiro número/nota a ser enviado\n" + //
+                  "     * @param num2 O segundo número/nota a ser enviado\n" + //
+                  "     * @param num3 O terceiro número/nota a ser enviado\n" + //
+                  "     * @return A média dos três números\n" + //
+                  "     * \n" + //
+                  "     */");
+                  System.out.println("Exemplo:");
+                System.out.println("A media simestral do João é :" + mediaBimestral(5, 6) + ";");
+                  System.out.println("=========////=========///===");
+     System.out.println("Escopos em Java:");
+     int localVar = 15;
+     System.out.println("Aqui temos escopo local...{localVar} o valor é:" + localVar + ";");
+     System.out.println("Fora da Classe:"+ globalVar+ ";");            
+    //   escopoLocal(localVar);
+     System.out.println("=====///========///=====");
+     System.out.println("The End");
     }
     public static String verificarAcesso(
         int idade,
@@ -68,17 +91,12 @@ public class funcoesB {
 
         System.out.println("Autenticação bem sucedida!");
       }
-
-    /**
-     * 
-     * Calcula a média de três números inteiros
-     * 
-     * @param num1 O primeiro número/nota a ser enviado
-     * @param num2 O segundo número/nota a ser enviado
-     * @param num3 O terceiro número/nota a ser enviado
-     * @return A média dos três números
-     * 
-     */
+      public static double mediaBimestral(int num1, int num2) {
+      return (num1 + num2) / 2;
+      }
+      public static void escopoLocal(){
+         System.out.println(globalVar);
+      }
      
  }
 
