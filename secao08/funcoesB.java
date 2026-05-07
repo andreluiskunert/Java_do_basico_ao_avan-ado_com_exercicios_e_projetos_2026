@@ -43,7 +43,22 @@ public class funcoesB {
      System.out.println("Fora da Classe:"+ globalVar+ ";");            
     //   escopoLocal(localVar);
      System.out.println("=====///========///=====");
-     System.out.println("The End");
+     System.out.println("O que são Funções Built-in em Java?{Teoria}");
+     System.out.println("●\n" + //
+                  "São funções já incorporadas na linguagem Java que fornecem funcionalidades\n" + //
+                  "comuns e essenciais. Elas são prontas para uso e não precisam ser definidas pelo\n" + //
+                  "programador;\n" + //
+                  "●Estão disponíveis automaticamente sem necessidade de importação ou definição;\n" + //
+                  "●Para que servem: manipulação de strings, operações matemáticas, conversão de\n" + //
+                  "dados, entre outras funcionalidades;\n" + //
+                  "●\n" + //
+                  "Geralmente, as funções built-in são altamente otimizadas para desempenho;");
+          System.out.println("=====///========///=====");
+          System.out.println("Funções Built-in de String{Prática} ");
+          System.out.println("Obs.: Em um Arquivo");
+          System.out.println("=====///========///=====");
+
+                  System.out.println("The End");
     }
     public static String verificarAcesso(
         int idade,
