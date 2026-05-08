@@ -12,6 +12,16 @@ public class FuncoesBuiltin {
         System.out.println("Tudo masculino:" + frase.toUpperCase());
         String fraseModificada = frase.toUpperCase();
         System.out.println( fraseModificada.toLowerCase() );
+        System.out.println("====///====///============///======");
+        System.out.println("Funções Built-in de Números (Math)");
+        System.out.println("qual é a raiz quadrada de 26 é :" +Math.sqrt(26));
+        System.out.println("qual é a raiz quadrada de 9 é : " + Math.sqrt(9));
+        System.out.println("Qual é a potencia de 2³ é : " + Math.pow(2, 03));
+        System.out.println("Valor Absoluto de -10 é : " + Math.abs(-10));
+        System.out.println("Qual maior de 100 ou 10 é : " + Math.max(100, 10));
+        System.out.println("O valor Absoluto de 10 é : "+Math.abs(10));
+        double raizQuadrada = Math.sqrt(99);
+        System.out.println("A raiz quadrada de 99 é: " + raizQuadrada);
     System.out.println("The End");
     }
 }
