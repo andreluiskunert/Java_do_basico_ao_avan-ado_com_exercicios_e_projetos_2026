@@ -45,13 +45,35 @@ package secao08;
 public class Exericios {
     public static void main(String[] args) {
         // Execuções
-        System.out.println("ExercícioS");
+        System.out.println("Exercício executando...");
         System.out.println("Ex.: 01");
         double celsius = 25.0;
         double fahrenheit = converterTemperatura(celsius);
         System.out.println("A temperatura de "+ celsius + "cº é equivamente a " + fahrenheit + " F;");
         System.out.println("Ex.: 02");
          System.out.println("O fatorial de 10 é: " + calcularFatorial(10));
+        System.out.println("====///====////======");
+        System.out.println("Ex.: 03");
+        System.out.println("O  numero 10 é :" + verificarParidade(10));
+        System.out.println("O numero 101 é " + verificarParidade(101));
+        System.out.println("====///====////======");
+        System.out.println("Ex.: 04");
+        System.out.println(classificarNota(11));
+        System.out.println(classificarNota(10));
+        System.out.println(classificarNota(8));
+        System.out.println(classificarNota(3));
+        System.out.println("====///====////======");
+        System.out.println("Ex.: 05");
+        // Exercício 5
+        // verificarIdade(12);
+
+        verificarIdade(44);
+          System.out.println("====///====////======");
+        System.out.println("Ex.: 06");
+        int[] numeros = {100, 5, 22, 44, 5};
+        System.out.println("O maior numero encontrado é :" +encontrarMaior(numeros));
+
+        System.out.println("===> The End <===");
     }
     // Funções
     public static double converterTemperatura(double celsius){
@@ -64,6 +86,62 @@ public class Exericios {
         } else {
             return numero * calcularFatorial(numero - 1);
         }
+
+    }
+    // Sexta-feira, 08/05/2026_De noite
+    public static String verificarParidade(int x){
+ if ( x % 2 == 0) {
+      return "O numero" + x + "é par";
+ } else{
+    return "O numero" + x + "é impar";
+
+   }
+ }
+ public static String classificarNota(int nota) {
+
+        if(nota < 0 || nota > 10) {
+            return "Nota inválida!";
+        }
+
+        switch (nota) {
+            case 10:
+            case 9:
+                return "A";
+            case 8:
+                return "B";
+            case 7:
+                return "C";
+            case 6:
+                return "D";
+            default:
+                return "F";
+        }
+
+    }
+
+    public static void verificarIdade(int idade) {
+
+        if(idade < 18) {
+            System.out.println("Acesso negado!");
+            System.exit(0);
+        }
+
+        System.out.println("Acesso permitido!");
+
+    }
+
+    public static int encontrarMaior(int[] numeros) {
+
+        int maior = numeros[0];
+
+        // Contador, cond. execução, Incremento
+        for(int i = 1; i < numeros.length; i++) {
+            if(numeros[i] > maior) {
+                maior = numeros[i];
+            }
+        }
+
+        return maior;
 
     }
 }
