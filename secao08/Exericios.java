@@ -45,6 +45,7 @@ package secao08;
 public class Exericios {
     public static void main(String[] args) {
         // Execuções
+        
         System.out.println("Exercício executando...");
         System.out.println("Ex.: 01");
         double celsius = 25.0;
@@ -74,6 +75,7 @@ public class Exericios {
         System.out.println("O maior numero encontrado é :" +encontrarMaior(numeros));
 
         System.out.println("===> The End <===");
+        System.out.println("Fiz tudo ontem....");
     }
     // Funções
     public static double converterTemperatura(double celsius){
