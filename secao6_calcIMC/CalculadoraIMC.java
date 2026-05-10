@@ -1,4 +1,4 @@
-package secao06;
+package secao6_calcIMC;
 // 1 - Pedir peso em kg
 // 2 - Pedir altura em m
 // 3 - Calcular IMC => peso / (altura * altura)

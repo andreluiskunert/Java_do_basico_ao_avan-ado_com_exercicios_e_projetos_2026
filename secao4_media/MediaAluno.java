@@ -1,4 +1,4 @@
-package secao04;
+package secao4_media;
 // Obter nome do aluno e 3 notas
 // Exibir mensagem com nome e média final
 // Bônus: Se a nota for maior ou igual a 7, imprimir Aprovado, se não: Reprovado

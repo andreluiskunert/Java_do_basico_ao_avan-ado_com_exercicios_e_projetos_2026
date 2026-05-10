@@ -1,4 +1,4 @@
-package secao03;
+package secao3_tabuada;
 
 import java.util.Scanner;
 

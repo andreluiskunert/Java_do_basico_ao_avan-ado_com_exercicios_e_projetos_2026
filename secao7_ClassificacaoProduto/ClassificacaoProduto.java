@@ -1,4 +1,4 @@
-package secao07;
+package secao7_ClassificacaoProduto;
 
 // Ter três produtos catalogados => Nome
 // Pedir o nome do produto => Novo ou de um ja existente
