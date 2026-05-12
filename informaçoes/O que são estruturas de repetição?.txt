@@ -1,0 +1,23 @@
+O que são estruturas de repetição?
+●
+Estruturas de repetição, ou loops, são comandos que permitem a execução repetida de
+um bloco de código enquanto uma condição específica for verdadeira;
+●
+Para que servem:
+○
+Automatizar a execução de tarefas repetitivas, economizando tempo e esforço ao evitar a necessidade
+de escrever o mesmo código várias vezes;
+○
+Permitem iterar sobre coleções de dados, realizar operações com números sequenciais, e processar
+entradas de forma eficiente;
+●
+As mais utilizadas:
+○
+for: Ideal para quando se sabe o número exato de iterações a serem realizadas. Permite o controle de
+variáveis de início, condição de continuidade e incremento;
+○
+while: Executa um bloco de código enquanto uma condição é verdadeira. Útil quando o número de
+iterações não é conhecido antecipadamente;
+○
+do-while: Similar ao while, mas garante que o bloco de código seja executado pelo menos uma vez, pois
+a condição é verificada após a execução;
