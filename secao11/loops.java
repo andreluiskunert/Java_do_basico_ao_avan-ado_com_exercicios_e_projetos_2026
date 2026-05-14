@@ -81,7 +81,26 @@ public class loops {
             System.out.println("numero aleatorio: " + numero);
 
         } while (numero != 1);
+     System.out.println("========///=======///====");
+     System.out.println("break");
+    //  Quarta-feira,13/05/2026_D'Noite
+        for(int x = 0; x <= 10; x++){
+            System.out.println("O valor de x é : " + x + ";");
+            if (x == 5) {
+                System.out.println("Parando o loop");
+                break;
+                
+            }
+        }
 
+        System.out.println("continue");
+        for(int y = 10; y > 0; y--){
+            if (y % 2 == 0) {
+                System.out.println("Par!");
+                continue;
+            }
+            System.out.println("O valor do y é :" + y + "");
+        }
 
      }
 }
