@@ -101,6 +101,25 @@ public class loops {
             }
             System.out.println("O valor do y é :" + y + "");
         }
+ System.out.println("========///=======///====");
+     System.out.println("Nested Loops:");
+    //  Quinta-feira, 14/05/2026_De Noite
+        for(int m = 1; m <= 3; m++){
+            System.out.println("Externo");
+            for(int n = 1; n <= 3; n++){
+              System.out.println(m + " x " + n + " = " + (m * n));
+            }
+        }
+     // Padrão de estrelas
+        for(int o = 1; o <= 10; o++) {
+
+            for(int p = 1; p <= o; p++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+
+        }
 
      }
 }
