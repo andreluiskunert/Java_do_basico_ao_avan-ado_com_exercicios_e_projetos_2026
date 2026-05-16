@@ -49,7 +49,7 @@ public class Exercicios {
             somatorio += i;
         }
         System.out.println("Soma de 1 a 100 é : " + somatorio + ";");
-        System.out.println("===Exercicios===");
+        System.out.println("===///===");
         System.out.println("Ex.02");
           int numero = 1;
 
@@ -61,6 +61,40 @@ public class Exercicios {
 
             numero++;
         }
+                System.out.println("===///===");
+        System.out.println("Ex.03");
+        // Sexta-feira,15/05/2026_de noite
+        int numPrimo = 26;
+        boolean ePrimo = true;
+        for(int i = 2; i <= numPrimo; i ++){
+            if(numPrimo % i == 0){
+                ePrimo = false;
+                break;
+            }
+        }
+        if (ePrimo) {
+            System.out.println("O numero " + numPrimo + " é primo!");
+        }  else {
+            System.out.println("O numero " + numPrimo + " NÃO é primo!");
+        }
+                 System.out.println("===///===");
+        System.out.println("Ex.04");
+        int opcao;
+        do{
+             System.out.println("Exercício 4 - Menu");
+            System.out.println("0) Refrigerante");
+            System.out.println("1) Hamburger");
+            System.out.println("2) Cachorro quente");
+            System.out.println("3) Sushi");
+            System.out.println("4) Sair");
+
+            opcao = (int)(Math.random() * 5);
+
+            System.out.println("A opção escolhida foi: " + opcao);
+
+        }while(opcao != 4);
+
+
     }
      
 }
