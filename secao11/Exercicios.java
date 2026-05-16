@@ -94,7 +94,25 @@ public class Exercicios {
 
         }while(opcao != 4);
 
-
+       System.out.println("===///===");
+        System.out.println("Ex.05");
+        // sábado,16/08/2026_de noite
+        int numFatorial = 5;
+        int fatorial = 1;
+        for(int i = 1; i <= numFatorial; i++) {
+            fatorial *= i;
+        }
+        System.out.println("O fatorial de "+ numFatorial + "é igual a " + fatorial);
+    
+       System.out.println("===///===");
+        System.out.println("Ex.06");
+        int numeroParaContar = 1000;
+        int contador = 0;
+    while (numeroParaContar !=0) {
+        numeroParaContar = numeroParaContar / 10;
+         contador++;
+    }
+    System.out.println("O numero de digitos é : " + contador);
     }
      
 }
