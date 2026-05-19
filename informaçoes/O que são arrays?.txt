@@ -1,0 +1,11 @@
+O que são arrays?
+●
+Arrays são estruturas de dados que armazenam múltiplos valores do mesmo tipo em
+uma única variável;
+●
+Arrays podem armazenar tipos primitivos (como int, double, char) ou objetos (como
+String ou classes personalizadas);
+●Os elementos de um array são acessados por índices, que começam em 0;
+●O tamanho de um array é definido na sua criação e não pode ser alterado;
+●Arrays são usados para armazenar listas de dados, como números, nomes, ou
+qualquer coleção de elementos homogêneos;
