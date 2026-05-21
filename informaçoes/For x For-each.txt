@@ -1,0 +1,23 @@
+For x For-each
+●
+Usar for:
+○
+Ideal quando você precisa acessar ou manipular o índice de cada elemento, como em casos onde
+o índice determina a lógica ou o comportamento do código;
+○
+Útil quando a iteração precisa pular elementos, ou quando o loop deve ser interrompido ou
+reiniciado em uma posição específica;
+○
+Recomendado quando você precisa modificar diretamente os elementos do array usando o
+índice;
+●
+Usar for-each:
+○
+Ideal para percorrer todos os elementos de um array ou coleção sem a necessidade de modificar
+os elementos ou controlar o índice;
+○
+Melhor para código que precisa ser limpo e fácil de entender, onde a manipulação do índice não
+é necessária;
+○
+Evita erros relacionados ao índice, como ArrayIndexOutOfBoundsException, porque o for-each
+não expõe o índice diretamente;
