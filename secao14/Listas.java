@@ -1,5 +1,6 @@
 package secao14;
 //  Segunda-feira,18/05/2026_De noite
+import java.util.Arrays;
 public class Listas {
     public static void main(String[] args) {
         System.out.println("tipos de Arrays: ");
@@ -121,5 +122,57 @@ public class Listas {
             }
 
         }
+         System.out.println("====///=====///=====///=====///=====///===");
+    System.out.println("5_Atualizações de valores em arrays");
+    for(int i = 0; i < numeros.length; i++){
+        numeros[i] *= 2;
+    }
+    System.out.println("Numero Dobrado é..."+ numeros[1] +";");
+       for(int numero : numeros) {
+            System.out.println("Numero dobrado: " + numero);
+        }
+          numeros[5] = 1;
+
+
+        System.out.println(numeros[5]);
+
+        for(int i = 0; i < frutas.length; i++) {
+
+            if(frutas[i].equals("Maçã")) {
+
+                frutas[i] = "Abacate";
+
+            }
+
+        }
+
+        System.out.println(frutas[0]);
+
+        // não pode fazer atribuição com foreach
+        for(int numero : numeros) {
+
+            numero *= 2;
+
+        }
+
+        for(int numero : numeros) {
+            System.out.println("Numero dobrado: " + numero);
+        }
+         System.out.println("====///=====///=====///=====///=====///===");
+    System.out.println("6_método toString");
+       // Classes no Java, que vão ter metodos utilitários, o Arrays é uma delas
+        String dadosNumericos = Arrays.toString(numeros);
+
+        System.out.println(dadosNumericos);
+        System.out.println(numeros);
+
+        String dadosFrutas = Arrays.toString(frutas);
+
+        System.out.println(dadosFrutas);
+
+        int[] teste = new int[3];
+
+        System.out.println(Arrays.toString(teste));
+        System.out.println("That's all for today, folks!");
     }
 }
