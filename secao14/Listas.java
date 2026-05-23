@@ -1,4 +1,5 @@
 package secao14;
+import java.util.ArrayList;
 //  Segunda-feira,18/05/2026_De noite
 import java.util.Arrays;
 public class Listas {
@@ -173,6 +174,92 @@ public class Listas {
         int[] teste = new int[3];
 
         System.out.println(Arrays.toString(teste));
+          System.out.println("====///=====///=====///=====///=====///===");
+    System.out.println(" 7_adicionando novos itens a arrays");
+    // Sabádo,23/05/2026_De tarde
+    int[] novoArray = new int[numeros.length +1];
+    for(int i = 0; i < numeros.length; i++) {
+            novoArray[i] = numeros[i];
+        }
+
+        System.out.println("Novo elemento é  "+ Arrays.toString(novoArray) + ";");
+        
+        
+        System.out.println( );
+        System.out.println("  utilizando arraycopy para copiar os els.");
+
+        String[] novoFrutas = new String[frutas.length + 1];
+
+        System.arraycopy(frutas, 0, novoFrutas, 0, frutas.length);
+
+        novoFrutas[novoFrutas.length - 1] = "Jaca";
+
+        System.out.println(Arrays.toString(novoFrutas));
+ System.out.println("usando ArrayList:");
+        ArrayList<String> listaFrutas = new ArrayList<>(Arrays.asList("Maçã", "Banana", "Laranja"));
+
+        System.out.println(listaFrutas);
+
+        listaFrutas.add("Manga");
+
+        System.out.println(listaFrutas);
+              System.out.println("====///=====///=====///=====///=====///===");
+    System.out.println(" 8_reference trap:");
+     int[] arrayOriginal = {1, 2, 3};
+        // programou bastante coisa...
+        int[] arrayCopia = arrayOriginal;
+
+        arrayCopia[0] = 10;
+
+        System.out.println(Arrays.toString(arrayOriginal));
+        System.out.println(Arrays.toString(arrayCopia));
+
+        // como evitar?
+        int[] arrayClone = arrayOriginal.clone();
+
+        arrayClone[0] = 999;
+
+        System.out.println(Arrays.toString(arrayOriginal));
+        System.out.println(Arrays.toString(arrayClone));
+                   System.out.println("====///=====///=====///=====///=====///===");
+    System.out.println(" 9_arrays 2d: ");
+
+        // 
+        // [[1, 2], [2, 3]]
+        // array[0][1]
+
+        int[][] matriz = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        System.out.println("Testando... "+matriz[1][2]);
+
+        // criando array 2d vazio e preenchendo
+        int[][] tabela = new int[3][3];
+
+        tabela[0][0] = 10;
+        tabela[1][1] = 20;
+        tabela[2][2] = 30;
+
+        for(int[] linha : tabela) {
+            System.out.println(Arrays.toString(linha));
+        }
+
+
+        int[][] grade = new int[4][5];
+
+        for(int m = 0; m < grade.length; m++) {
+            for(int n = 0; n < grade[m].length; n++) {
+                grade[m][n] = m * n;
+            }
+        }
+
+        for(int[] linha : grade) {
+            System.out.println(Arrays.toString(linha));
+        }
+        System.out.println();
         System.out.println("That's all for today, folks!");
     }
 }
