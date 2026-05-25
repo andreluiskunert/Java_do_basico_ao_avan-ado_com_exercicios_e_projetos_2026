@@ -1,5 +1,6 @@
 package secao14;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -103,6 +104,34 @@ public class Exercicios {
         for(int[] linha : matrizTransposta) {
             System.out.println(Arrays.toString(linha));
         }
+          System.out.println("O mais frequente é  {1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1}: " + maisFrequente);
+  System.out.println("==//==//==//==");
+        System.out.println("Ex04:");
+        // Domingo,24/05/2026_D'noite
+        int[] arrayComNegativos = {1, -2, -3, -4, -5, -6};
+        System.out.println("O numeros negativos e um positivo:" + Arrays.toString(arrayComNegativos)+";");
+        for(int i = 0; i < arrayComNegativos.length;i++){
+         if(arrayComNegativos[i]< 0){
+            arrayComNegativos[i] = 0;
+         }
+    }
+    System.out.println("Resultado é :" + Arrays.toString(arrayComNegativos)+ ";");
+System.out.println("==//==//==//==");
+        System.out.println("Ex05:");
+   int[] arrayComDuplicados = {1, 2, 2, 2, 3, 4, 4, 5};
+   ArrayList<Integer> arraySemDuplicados = new ArrayList<>(); 
+        
+        for(int numero : arrayComDuplicados) {
+
+            if(!arraySemDuplicados.contains(numero)) {
+                arraySemDuplicados.add(numero);
+            }
+
+        }
+
+        System.out.println("Duplicados são:"+ Arrays.toString(arrayComDuplicados));
+        System.out.println("Sem Duplicação:"+arraySemDuplicados);
+
 
         System.out.println("That's all for today, folks!");
     }
