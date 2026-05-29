@@ -1,0 +1,19 @@
+O que é Orientação a Objetos?
+●
+Orientação a Objetos (OOP) é um paradigma de programação que organiza o software em torno
+de objetos;
+●
+Esses objetos representam entidades do mundo real e interagem entre si para resolver
+problemas;
+●Cada objeto é uma instância de uma classe, que define os atributos e comportamentos do objeto;
+●OOP facilita o design modular do software, tornando-o mais fácil de manter, reutilizar e expandir;
+●Os principais pilares da OOP são abstração, encapsulamento, herança e polimorfismo;
+●Benefícios da Orientação a Objetos
+○Modularidade: O código é organizado em classes e objetos, tornando-o mais fácil de entender e manter;
+○Reuso de Código: A herança e a modularidade facilitam a reutilização de partes do código em diferentes
+aplicações;
+○
+Facilidade de Manutenção: Alterações podem ser feitas em uma classe sem afetar outras partes do sistema,
+promovendo maior flexibilidade;
+○
+Segurança: O encapsulamento protege os dados e controla o acesso aos atributos e métodos de uma classe;

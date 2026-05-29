@@ -1,0 +1,21 @@
+Terminologia de OO
+●
+●
+●
+●
+●
+Classe
+○Um "molde" ou "blueprint" para criar objetos;
+○Define os atributos (propriedades) e métodos (comportamentos) de um objeto;
+Objeto
+○Instância de uma classe;
+○Exemplo: Um carro é um objeto da classe "Carro", com atributos como cor, modelo e métodos como acelerar, frear;
+Atributo (ou Propriedade)
+○São variáveis dentro da classe que armazenam os dados do objeto;
+○Exemplo: No objeto "Carro", atributos podem ser cor, modelo, ano;
+Método
+○Função definida dentro de uma classe que representa uma ação ou comportamento do objeto;
+○Exemplo: No objeto "Carro", métodos podem ser acelerar(), frear();
+Instanciação
+○Processo de criar um novo objeto a partir de uma classe;
+○Utiliza-se a palavra-chave new em Java para instanciar um objeto;
