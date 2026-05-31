@@ -40,7 +40,7 @@ public class POO {
 
 
         System.out.println(fusca.motorLigado);
-
+/* 
         // 4 - Criando propriedades
         Pessoa joao = new Pessoa();
 
@@ -94,7 +94,7 @@ public class POO {
         Livro meuLivro2 = new Livro();
 
         meuLivro2.exibirInfo();
-
+ */
     }
 
 
