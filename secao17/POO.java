@@ -39,7 +39,7 @@ public class POO {
         fusca.aumentarVelocidade(30.0);
 
 
-        System.out.println(fusca.motorLigado);
+        //System.out.println(fusca.motorLigado);
 /* 
         // 4 - Criando propriedades
         Pessoa joao = new Pessoa();
