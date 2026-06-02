@@ -1,0 +1,13 @@
+O this em objetos
+●
+O this é uma palavra-chave em Java usada dentro de métodos de uma classe para se referir ao objeto
+atual;
+●
+Ele é útil para distinguir entre os atributos do objeto e os parâmetros do método com o mesmo
+nome;
+●O this é frequentemente usado em setters e construtores para referenciar os atributos do objeto;
+●Sempre que um método de uma classe é chamado, o this se refere à instância do objeto que fez a
+chamada;
+●
+O this também pode ser usado para encadear métodos (method chaining) ou chamar outros
+construtores;

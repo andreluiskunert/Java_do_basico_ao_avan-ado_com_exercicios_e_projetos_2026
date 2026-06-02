@@ -40,7 +40,7 @@ public class POO {
 
 
         //System.out.println(fusca.motorLigado);
-/* 
+
         // 4 - Criando propriedades
         Pessoa joao = new Pessoa();
 
@@ -65,7 +65,7 @@ public class POO {
         System.out.println(ContaDaAna.getTitular());
 
         System.out.println(ContaDaAna.getSaldo());
-
+/*
         // 6 - Logica em get e set
 
         Produto camisa = new Produto();
