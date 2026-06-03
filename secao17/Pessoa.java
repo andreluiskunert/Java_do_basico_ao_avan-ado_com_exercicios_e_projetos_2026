@@ -1,4 +1,4 @@
-public class pessoa {
+public class Pessoa {
     private String nome;
     private int idade;
   public void setNome(String nome) {

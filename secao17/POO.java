@@ -65,7 +65,7 @@ public class POO {
         System.out.println(ContaDaAna.getTitular());
 
         System.out.println(ContaDaAna.getSaldo());
-/*
+
         // 6 - Logica em get e set
 
         Produto camisa = new Produto();
@@ -76,9 +76,9 @@ public class POO {
 
         camisa.setPreco(29.99999999999999);
 
-        System.out.println(camisa.getPreco());
+        System.out.println(camisa.getPreco()); */
 
-
+/*
         // 7 - Método dentro de método
         System.out.println(camisa.getProdutoInfo());
 
