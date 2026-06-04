@@ -78,7 +78,7 @@ public class POO {
 
         System.out.println(camisa.getPreco()); */
 
-/*
+
         // 7 - Método dentro de método
         System.out.println(camisa.getProdutoInfo());
 
@@ -94,7 +94,7 @@ public class POO {
         Livro meuLivro2 = new Livro();
 
         meuLivro2.exibirInfo();
- */
+ 
     }
 
 
