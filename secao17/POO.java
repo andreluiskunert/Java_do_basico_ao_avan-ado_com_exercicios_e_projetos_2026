@@ -1,5 +1,3 @@
-
-
 public class POO {
     
     public static void main(String[] args) {
@@ -97,5 +95,34 @@ public class POO {
  
     }
 
-
 }
+
+class Carro 
+    String marca;
+    String modelo;
+    int ano;
+    boolean motorLigado;
+    double velocidade;
+
+    void acelerar() {
+        System.out.println("Acelerando...");
+    }
+
+    void exibirInfo() {
+        System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Ano: " + ano + ", Velocidade: " + velocidade + ", Motor ligado: " + motorLigado);
+    }
+
+    void aumentarVelocidade(double valor) {
+        if (motorLigado) {
+            velocidade += valor;
+            System.out.println("Velocidade atual: " + velocidade);
+        } else {
+            System.out.println("Motor desligado. Ligue o motor primeiro.");
+        }
+    }
+
+    void ligarMotor() {
+        motorLigado = true;
+        System.out.println("Motor ligado.");
+    }
+
