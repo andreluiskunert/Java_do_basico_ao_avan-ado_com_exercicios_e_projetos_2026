@@ -46,7 +46,7 @@
 
 public class Exercicios {
     public static void main(String[] args) {
-        System.out.println("===Exercicios===");
+        System.out.println("      ===Exercicios===   ");
         System.out.println("§Exer.01");
         Celular iphone = new Celular();
         iphone.marca = "Apple";
@@ -63,7 +63,7 @@ public class Exercicios {
         s10.modelo = "S10";
 
         s10.usar(15);
-        System.out.println("=====//====//=====");
+        System.out.println("=====//====//=====//====//===//===//====//===//===");
         System.out.println("§Exerc.02");
     Aluno pedro = new Aluno("Pedro", 123, 33.3);
 
@@ -80,6 +80,38 @@ public class Exercicios {
         Aluno maria = new Aluno("Maria", 1234, 99.9);
 
         maria.exibirInfo();
-        System.out.println("The End");
+        System.out.println("====//===//===//====//===//===//====//===//===");
+         System.out.println("§Exerc.03");
+        ContaCorrente conta1 = new ContaCorrente("José", 5000.0, 800.0);
+
+        conta1.depositar(1100);
+
+        conta1.sacar(950);
+
+        conta1.sacar(500);
+
+        conta1.exibirSaldo();
+         System.out.println("====//===//===//====//===//===//====//===//===");
+         System.out.println("§Exerc.04");
+             ProdutoEletronico microondas = new ProdutoEletronico("Microondas", 400, 12);
+
+        microondas.aplicarDesconto(15);
+
+        microondas.exibirInfo();
+System.out.println("====//===//===//====//===//===//====//===//===");
+         System.out.println("§Exerc.05");
+          LivroBiblioteca livro1 = new LivroBiblioteca();
+
+        livro1.setTitulo("Java: Como Programar");
+
+        livro1.devolver();
+
+        livro1.pegarEmprestado();
+
+        livro1.pegarEmprestado();
+
+        livro1.devolver();
+        System.out.println();
+        System.out.println(     "        The End       "  );
     }
 }

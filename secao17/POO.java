@@ -74,8 +74,7 @@ public class POO {
 
         camisa.setPreco(29.99999999999999);
 
-        System.out.println(camisa.getPreco()); */
-
+        System.out.println(camisa.getPreco());
 
         // 7 - Método dentro de método
         System.out.println(camisa.getProdutoInfo());
@@ -97,7 +96,7 @@ public class POO {
 
 }
 
-class Carro 
+class Carro {
     String marca;
     String modelo;
     int ano;
@@ -125,4 +124,5 @@ class Carro
         motorLigado = true;
         System.out.println("Motor ligado.");
     }
+}
 
