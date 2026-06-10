@@ -1,7 +1,7 @@
 package secao19_CadastroAunosP;
 // Segunda-feira,08/06/2026_D'noite
 import java.util.Scanner;
-public class Aluno {
+public class Aluno1 {
     /* Scanner scanner = new Scanner(System.in);
     scanner.close;
      */
@@ -9,7 +9,7 @@ public class Aluno {
     private String matricula;
     private double[] notas;
 
-    public Aluno(String nome, String matricula, int numeroDeNotas){
+    public Aluno1(String nome, String matricula, int numeroDeNotas){
         this.nome = nome;
         this.matricula = matricula;
         this.notas = new double[numeroDeNotas];
@@ -29,7 +29,9 @@ public class Aluno {
             notas[i] = scanner.nextDouble();
 
         }
-   public double calcularMedia() {
+    }
+
+    public double calcularMedia() {
         double soma = 0;
 
         for(double nota : notas) {
