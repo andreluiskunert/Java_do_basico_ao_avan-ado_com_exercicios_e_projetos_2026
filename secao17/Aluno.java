@@ -1,5 +1,8 @@
+package secao17;
+
 public class Aluno {
-     private String nome;
+    
+    private String nome;
     // private int matricula;
     private double notaFinal;
 
@@ -36,4 +39,5 @@ public class Aluno {
     public void exibirInfo() {
         System.out.println("O Aluno: " + nome + ", obteve a nota final de : " + notaFinal);
     }
+
 }

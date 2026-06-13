@@ -1,0 +1,9 @@
+O que é Abstraction?
+●Abstração é um dos pilares fundamentais da Programação Orientada a Objetos (POO);
+●Ela consiste em ocultar os detalhes complexos de uma implementação, expondo apenas as
+funcionalidades essenciais para o usuário;
+●
+Abstração ajuda a simplificar o uso de objetos, escondendo a complexidade interna e focando apenas
+nas operações relevantes;
+●
+Em Java, abstração é alcançada com o uso de classes abstratas e interfaces;
