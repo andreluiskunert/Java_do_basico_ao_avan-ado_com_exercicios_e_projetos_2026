@@ -58,6 +58,14 @@ public class POO {
         System.out.println(funcionario.calcularBonus());
 
         System.out.println(gerente.calcularBonus());
+        System.out.println("+++-----=====///====///=====");
+        System.out.println("6  - Classe abstrata");
+        // Sabádo,13/06/2026_D'Tarde
+           InstrumentoMusical violao = new Violao("violão");
+        InstrumentoMusical bateria = new Bateria("bateria");
+
+        violao.exibirDetalhes();
+        bateria.exibirDetalhes();
         System.out.println();
 
 

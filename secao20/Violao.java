@@ -1,8 +1,8 @@
 package secao20;
 
-public class Violao {
+public class Violao extends InstrumentoMusical {
     public Violao(String nome ){
-    super(nome);
+        super(nome);
     }
 
     @Override

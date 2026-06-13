@@ -16,7 +16,6 @@ public class Funcionario {
         return salario * 1;
     }
     public double calcularBonus() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calcularBonus'");
+        return salario * 1;
     }
 }

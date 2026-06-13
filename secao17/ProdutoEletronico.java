@@ -1,5 +1,7 @@
+ package secao17;
+
 public class ProdutoEletronico {
-   
+    
     private String nome;
     private double preco;
     private int garantia; // em meses
@@ -34,5 +36,6 @@ public class ProdutoEletronico {
 
     public void exibirInfo() {
         System.out.println("O produto: " + nome + ", está com o preço de: " + preco + ", e tem " + garantia + " meses de garantia.");
-    } 
+    }
+
 }

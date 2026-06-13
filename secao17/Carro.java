@@ -39,3 +39,31 @@ public class Carro {
     
 
 } */
+package secao17;
+
+public class Carro {
+
+    String marca;
+    String modelo;
+    int ano;
+    boolean motorLigado;
+
+    public void acelerar() {
+        System.out.println("Acelerando...");
+    }
+
+    public void exibirInfo() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Ano: " + ano);
+    }
+
+    public void aumentarVelocidade(double velocidade) {
+        System.out.println("Velocidade aumentada em " + velocidade + " km/h");
+    }
+
+    public void ligarMotor() {
+        motorLigado = true;
+        System.out.println("Motor ligado!");
+    }
+}
