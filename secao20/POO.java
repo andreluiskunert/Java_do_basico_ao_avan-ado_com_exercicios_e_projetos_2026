@@ -66,7 +66,23 @@ public class POO {
 
         violao.exibirDetalhes();
         bateria.exibirDetalhes();
+         System.out.println("+++-----=====///====///=====");
+        System.out.println("7 - Interfaces");
+        // Domingo,14/06/2026_D'madrugada
+        Pagamento cartao = new CartaoCredito();
+        Pagamento transf = new TransferenciaBancaria();
+
+        cartao.processarPagamento(100);
+        cartao.exibirRecibo(100);
+
+        transf.processarPagamento(250);
+        transf.exibirRecibo(250);
+          System.out.println("+++-----=====///====///=====");
+        System.out.println("8 - Multiplas interface");
+        System.out.println("proxima aula....");
+
         System.out.println();
+
 
 
         System.out.println("The End");
