@@ -79,8 +79,17 @@ public class POO {
         transf.exibirRecibo(250);
           System.out.println("+++-----=====///====///=====");
         System.out.println("8 - Multiplas interface");
-        System.out.println("proxima aula....");
+        // System.out.println("proxima aula....");
+  Documento doc = new Documento("Arquivo de texot");
 
+        doc.salvar();
+
+        doc.imprimir();
+
+        doc.instrucaoParaSalvar();
+         System.out.println("+++-----=====///====///=====");
+        System.out.println(" 9 - Default methods nas interfaces");
+        System.out.println("proxima aula....");
         System.out.println();
 
 
