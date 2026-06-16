@@ -89,7 +89,14 @@ public class POO {
         doc.instrucaoParaSalvar();
          System.out.println("+++-----=====///====///=====");
         System.out.println(" 9 - Default methods nas interfaces");
-        System.out.println("proxima aula....");
+        // System.out.println("proxima aula....");
+        // Segunda-feira,15/06/2026_D'Noite
+        CalculadoraAvancada calc = new CalculadoraAvancada();
+
+        System.out.println(calc.somar(2, 4));
+
+        System.out.println(calc.multiplicar(4, 5));
+
         System.out.println();
 
 
