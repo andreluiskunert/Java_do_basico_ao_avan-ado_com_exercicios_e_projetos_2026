@@ -1,0 +1,15 @@
+Classe Abstrata x Interface
+●
+●
+Classe Abstrata:
+○Uma classe que não pode ser instanciada diretamente;
+○Pode conter métodos abstratos (sem corpo) e métodos concretos (com corpo);
+○Permite a existência de atributos e construtores;
+○Serve para definir um comportamento comum, que pode ser herdado por subclasses;
+○Uma classe pode herdar apenas uma única classe abstrata;
+Interface:
+○Um contrato que define métodos que uma classe deve implementar;
+○Antes do Java 8, continha apenas métodos abstratos. A partir do Java 8, pode ter métodos
+default e static com implementação;
+○Não pode ter construtores ou atributos de instância, apenas constantes;
+○Uma classe pode implementar múltiplas interfaces ao mesmo tempo;

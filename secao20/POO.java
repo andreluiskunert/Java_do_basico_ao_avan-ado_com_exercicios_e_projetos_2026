@@ -96,6 +96,13 @@ public class POO {
         System.out.println(calc.somar(2, 4));
 
         System.out.println(calc.multiplicar(4, 5));
+        System.out.println("+++-----=====///====///=====");
+        System.out.println(" 10 - Polimorfismo");
+        // System.out.println("proxima aula....");
+        // Terça-feira,16/06/2026_D'Noite
+        InstrumentoMusical Violino = new Violino("Violino");
+        Violino.exibirDetalhes();
+        Violino.tocar();
 
         System.out.println();
 
