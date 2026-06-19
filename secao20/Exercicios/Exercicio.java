@@ -49,14 +49,22 @@ public class Exercicio {
     public static void main(String[] args) {
         
     System.out.println("===Exercicio===");
+    System.out.println(" Exercício 1");
     Endereco endereco = new Endereco("Rua teste", 123, "São Paulo");
     Endereco endereco1 = new Endereco("Street For", 123, "Vancouver_Canada");
     
         Pessoa pessoa = new Pessoa("Matheus", 33, endereco);
         Pessoa pessoa1 = new Pessoa("Andre Luis", 49, endereco);
-
-
-        pessoa.exibirInfo();
+    pessoa.exibirInfo();
+        System.out.println("===//===///=====////=====///===///======");
+    System.out.println("Exercício 2 ");
+       Carro carro = new Carro();
+       Moto moto = new Moto();
+       moto.acelerar();
+        
+        System.out.println("===//===///=====////=====///===///======");
+    System.out.println("Exercício 3 ");
+    System.out.println("Próximo....");
     System.out.println("The End....");
     }
 }
