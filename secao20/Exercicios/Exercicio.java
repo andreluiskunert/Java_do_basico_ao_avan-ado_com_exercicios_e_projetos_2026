@@ -64,7 +64,17 @@ public class Exercicio {
         
         System.out.println("===//===///=====////=====///===///======");
     System.out.println("Exercício 3 ");
+    // System.out.println("Próximo....");
+    //  Cachorro bob = new Cachorro("Bob", "latido", "Poodle");
+
+    //     bob.exibirDetalhes();
+     Cachorro Alfa = new Cachorro("Alfa", "latido", "Cane Goso");
+
+        Alfa.exibirDetalhes();
+ System.out.println("===//===///=====////=====///===///======");
+    System.out.println("Exercício 4");
     System.out.println("Próximo....");
+
     System.out.println("The End....");
     }
 }
