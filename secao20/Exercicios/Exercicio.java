@@ -73,8 +73,21 @@ public class Exercicio {
         Alfa.exibirDetalhes();
  System.out.println("===//===///=====////=====///===///======");
     System.out.println("Exercício 4");
-    System.out.println("Próximo....");
+    // System.out.println("Próximo....");
+       FuncionarioTempoIntegral fti = new FuncionarioTempoIntegral("Ana", 4000);
+        FuncionarioMeioPeriodo fmp = new FuncionarioMeioPeriodo("Pedro", 50, 120);
 
+        System.out.println("Salario Ana " + fti.calcularSalario());
+
+        System.out.println("Salário Pedro " + fmp.calcularSalario());
+
+        fti.adicionarBeneficio("Plano de saúde e VA");
+
+        fmp.adicionarBeneficio("VA");
+        System.out.println("===//===///=====////=====///===///======");
+    System.out.println("Exercício 5");
+    System.out.println("Próximo....");
+System.out.println();
     System.out.println("The End....");
     }
 }
