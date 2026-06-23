@@ -87,6 +87,33 @@ public class Exercicio {
         System.out.println("===//===///=====////=====///===///======");
     System.out.println("Exercício 5");
     System.out.println("Próximo....");
+        Pilotavel meuHidroAviao = new Hidroaviao();
+        Navegavel meuBarco = new Barco();
+        Pilotavel meuAviao = (Pilotavel) new Aviao();
+
+
+        meuAviao.pilotar();
+
+        meuHidroAviao.pilotar();
+
+        meuBarco.navegar();
+
+        operarVeiculo(meuAviao);
+        // operarVeiculo(meuHidroAviao);
+        operarVeiculo(meuBarco);
+           }
+
+    public static void operarVeiculo(Object veiculo) {
+
+        if(veiculo instanceof Pilotavel) {
+            System.out.println("Este veículo é pilotável");
+        }
+
+        if(veiculo instanceof Navegavel) {
+            System.out.println("Este veículo é navegável");
+        }
+
+
 System.out.println();
     System.out.println("The End....");
     }
