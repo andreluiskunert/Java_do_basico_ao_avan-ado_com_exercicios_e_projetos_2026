@@ -4,6 +4,7 @@ public class Erros {
    
     public static void main(String[] args) {
         // try catch
+        System.out.println("try catch");
         try{
             int a = 0;
             int b = 10;
@@ -17,6 +18,19 @@ public class Erros {
              System.out.println("Erro Genérico");
              System.out.println("Msg: "+ error.getMessage());
         }
+        System.out.println("===//=====//========//=====");
+        // Sexta-feira,26/06/2026_d'noite
+        System.out.println("Bloco finaly");
+        try {
+            int[] numeros = {1,2,3};
+            System.out.println(numeros[3]);
+        } catch (ArrayIndexOutOfBoundsException error) {
+            System.out.println("Erro genético");
+            System.out.println("Msg: " + error.getMessage());
 
+        } finally{
+            System.out.println("Executou o finaly");
+        }
+  System.out.println("       The End       ");
     }
 }
