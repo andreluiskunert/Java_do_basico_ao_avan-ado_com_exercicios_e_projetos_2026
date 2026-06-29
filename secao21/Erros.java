@@ -62,14 +62,59 @@ public class Erros {
             System.out.println("Erro: " + e.getMessage());
         }
               System.out.println("===//=====//========//=====");
-        // Sábado,27/06/2026_d'noite
-        System.out.println("05_exceções_customizadas:");
+              System.out.println("05_exceções_customizadas:");
+        // System.out.println("Continue....");
+        // Segunda-feira_D'Tarde,29/06/2026_Feriado Municipal
+
+        Banco minhaConta = new Banco(5000);
+
+        try {
+            
+            minhaConta.sacar(6000);
+
+        } catch (Exception e) {
+           
+            System.out.println("Erro: " + e.getMessage());
+
+        }
+          System.out.println("===//=====//========//=====");
+              System.out.println("06_throws em métodos:");
+        // System.out.println("Continue....");
+           // Segunda-feira_D'Tarde,29/06/2026_Feriado Municipal
+           try {
+            
+            processarArquivo("/var/www/arquivo.txt");
+
+        } catch (FileNotFoundException e) {
+            System.out.println("Erro: " + e.getMessage());
+        } catch(IOException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+        System.out.println("===//=====//========//=====");
+              System.out.println("07_Encadeamento de exceções:");
+        // System.out.println("Continue....");
+         try {
+            
+            abrirArquivo(null);
+
+        } catch (Exception e) {
+            
+            System.out.println("Mensagem: " + e.getMessage());
+
+            System.out.println("Causa original: " + e.getCause());
+
+        }
+           System.out.println("===//=====//========//=====");
+              System.out.println("08_multicatch:");
         System.out.println("Continue....");
+
         System.out.println("===//=====//========//=====");
 
   System.out.println("       The End       ");
     }
-     public static void validarIdade(int idade) {
+     
+
+    public static void validarIdade(int idade) {
 
         if(idade < 18) {
             throw new IllegalArgumentException("Idade deve ser maior que 18.");
@@ -79,4 +124,59 @@ public class Erros {
 
     }
 
+    public static void processarArquivo(String caminho) throws FileNotFoundException, IOException {
+
+        if(caminho == null || caminho.isEmpty()) {
+            throw new IOException("Caminho inválido.");
+        }
+
+        File arquivo = new File(caminho);
+
+        if(!arquivo.exists()) {
+            throw new FileNotFoundException("Arquivo não encontrado.");
+        }
+
+        System.out.println("Arquivo encontrado com sucesso!");
+
+    }
+
+    public static void abrirArquivo(String caminho) {
+
+        try {
+            
+            if(caminho == null) {
+                throw new NullPointerException("Caminho nulo.");
+            }
+
+            throw new FileNotFoundException("Arquivo não encontrado");
+
+        } catch (FileNotFoundException e) {
+            
+            NullPointerException npe = new NullPointerException("Erro ao processar arquivo");
+
+            npe.initCause(e);
+
+            throw npe;
+
+        }
+
+    }
+        public static void processarDados(String dados) throws Exception {
+
+        try {
+            
+            if(dados == null) {
+                throw new NullPointerException("Os dados são nulos.");
+            }
+
+
+        } catch (Exception e) {
+
+            System.out.println("Tratamento, criação de log, ...");
+
+            throw e;
+        }
+
+
+    }
 }
