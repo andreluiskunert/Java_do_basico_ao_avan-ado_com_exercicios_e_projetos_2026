@@ -5,6 +5,7 @@ public class Erros {
    
     public static void main(String[] args) {
         // try catch
+        System.out.println("==========> Erros na Prátca <======");
         System.out.println("01_try catch");
         try{
             int a = 0;
@@ -106,7 +107,33 @@ public class Erros {
         }
            System.out.println("===//=====//========//=====");
               System.out.println("08_multicatch:");
-        System.out.println("Continue....");
+            //   Segunda-feira_D'Noite, 29/06/2026
+        
+        // System.out.println("Continue....");
+        try {
+            
+            processarArquivo("asd");
+            
+        } catch (NullPointerException | IOException e) {
+            
+            System.out.println("Erro multicatch: " + e.getMessage());
+
+        }
+             System.out.println("===//=====//========//=====");
+              System.out.println("09_re lancar as excecoes:");
+   try {
+            
+            processarDados(null);
+
+        } catch (Exception e) {
+            
+            System.out.println("Outra coisa...");
+
+            System.out.println("MSG: " + e.getMessage());
+
+            System.out.println("Pilha de execução: " + e.getStackTrace());
+
+        }
 
         System.out.println("===//=====//========//=====");
 
