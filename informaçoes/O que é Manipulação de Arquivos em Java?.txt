@@ -1,0 +1,13 @@
+O que é Manipulação de Arquivos em Java?
+●
+Manipulação de arquivos em Java envolve a leitura, escrita, e gerenciamento de arquivos e diretórios
+no sistema de arquivos;
+●
+Java fornece várias APIs para trabalhar com arquivos, como FileReader, FileWriter, BufferedReader, e
+a API java.nio.file;
+●É possível trabalhar com arquivos de texto (como .txt) e arquivos binários (como imagens, vídeos);
+●A manipulação de arquivos permite armazenar e recuperar dados, realizar operações de entrada/saída
+(I/O) e até serializar objetos;
+●
+O uso adequado dessas APIs garante segurança e eficiência no gerenciamento de arquivos, evitando
+problemas como corrupção de dados e vazamentos de recursos;
