@@ -45,6 +45,37 @@ public class Arquivo {
         }
         
   System.out.println("==========//=================///=================//=============");
-   System.out.println("The End...");
+   System.out.println("03ª_ Escrever em arquivos:");
+//    Quinta-feira_D'Noite
+   try (FileWriter writer = new FileWriter(currentDir + "saida.txt")) {
+            
+            writer.write("Escrevendo em arquivo \n");
+            writer.write("Escrevendo em arquivo 2");
+
+        } catch (Exception e) {
+            System.out.println("Erro ao escrever em arquivo: " + e.getMessage());
+        }
+
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(currentDir + "saida2.txt"))) {
+            
+            writer.write("Escrevendo em arquivo com o buffered");
+            writer.newLine();
+            writer.write("Escrevendo em arquivo com o buffered 2");
+            writer.newLine();
+
+        } catch (Exception e) {
+            System.out.println("Erro ao escrever em arquivo: " + e.getMessage());
+        }
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(currentDir + "saida2.txt", true))) {
+            
+            writer.append("Testando");
+
+        } catch (Exception e) {
+            System.out.println("Erro ao escrever em arquivo: " + e.getMessage());
+        }
+
+  System.out.println("The End...");
     }
 }
