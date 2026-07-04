@@ -75,7 +75,32 @@ public class Arquivo {
         } catch (Exception e) {
             System.out.println("Erro ao escrever em arquivo: " + e.getMessage());
         }
+          System.out.println("==========//=================///=================//=============");
+   System.out.println("04ª_Serialização de Objetos(Serializable):");
+//    Sexta-feira_D'Noite
+  Pessoa pessoa = new Pessoa("Andre", 44);
+   System.out.println(pessoa.getNome());
+try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(currentDir + "pessoa.ser"))) {
+            
+            oos.writeObject(pessoa);
 
+            System.out.println("Objeto serializado com sucesso.");
+
+        } catch (Exception e) {
+            System.out.println("Erro ao serializar objeto: " + e.getMessage());
+        }
+
+        // deserializacao = INPUT
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(currentDir + "pessoa.ser"))) {
+            
+            Pessoa pessoa2 = (Pessoa) ois.readObject();
+
+            System.out.println("Nome: " + pessoa2.getNome());
+            System.out.println("Idade: " + pessoa2.getIdade());
+
+        } catch (Exception e) {
+            System.out.println("Erro ao deserializar objeto: " + e.getMessage());
+        }
   System.out.println("The End...");
     }
 }
