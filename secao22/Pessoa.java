@@ -12,7 +12,7 @@ public class Pessoa implements Serializable {
     public String getNome() {
         return nome;
     }
-    public int idade(){
+    public int getIdade(){
         return idade;
     }
 }

@@ -1,8 +1,20 @@
 package secao22;
 import java.io.*;
+import java.io.*;
+
+import java.awt.*;
+
+import java.awt.image.BufferedImage;
+
+import javax.imageio.ImageIO;
+
+import java.nio.file.*;
+
+import java.util.zip.*;
 public class Arquivo {
     public static void main(String[] args) {
-    System.out.println("01_Leitura de Arquivo:");
+        System.out.println("------------Manipulação de Arquivos e Diretorios------------");
+    System.out.println("01ª_Leitura de Arquivo:");
         //   Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026/secao22/Arquivo.java
         // Obs.: Caminho Relativo
         String currentDir = System.getProperty("user.dir");
@@ -101,6 +113,44 @@ try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(curren
         } catch (Exception e) {
             System.out.println("Erro ao deserializar objeto: " + e.getMessage());
         }
+         System.out.println("==========//=================///=================//=============");
+   System.out.println("05ª_ deserializacao = INPUT:");
+//    Sábado_D'tarde 
+try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(currentDir + "pessoa.ser"))) {
+     
+            Pessoa pessoa2 = (Pessoa) ois.readObject();
+
+            System.out.println("Nome: " + pessoa2.getNome());
+            System.out.println("Idade: " + pessoa2.getIdade());
+
+} catch (Exception e) {
+      System.out.println("Erro ao deserializar objeto: " + e.getMessage());
+
+}
+      System.out.println("==========//=================///=================//=============");
+   System.out.println("06ª_manipulacao de binários:");
+//    Sábado_D'tarde 
+try (FileInputStream fis = new FileInputStream(currentDir + "minha bike absolute nero5.jepg");
+     FileOutputStream fos = new FileOutputStream(currentDir + "copia_minha bike absolute nero5.jepg")) {
+            
+            int byteData;
+
+            while((byteData = fis.read()) != -1) {
+                fos.write(byteData);
+            }
+
+            System.out.println("Arquivo copiado com sucesso.");
+
+} catch (Exception e) {
+            System.out.println("Erro ao copiar arquivo: " + e.getMessage());
+              System.out.println("==========//=================///=================//=============");
+  
+}
+ System.out.println("07ª_Copia de Video com Buffer:");
+///    Sábado_D'tarde 
+System.out.println("Proxima aula...");
+System.out.println("----//----------//------//--------//------------//-------//----------");
   System.out.println("The End...");
-    }
+    
+}
 }
