@@ -147,10 +147,27 @@ try (FileInputStream fis = new FileInputStream(currentDir + "minha bike absolute
   
 }
  System.out.println("07ª_Copia de Video com Buffer:");
-///    Sábado_D'tarde 
-System.out.println("Proxima aula...");
+///    Terça-feira,07/07/2026_D'noite
+/// System.out.println("Proxima aula...");
+try(BufferedInputStream bis = new BufferedInputStream(new FileInputStream(currentDir + "CYBERCOPS.mp4"));
+     BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(currentDir + "copia_CYBERCOPS.mp4"))){
+      byte[] buffer = new byte[1024]; // Buffer 1kb em 1kb
+
+            int bytesLidos;
+
+            while((bytesLidos = bis.read(buffer)) != -1) {
+                bos.write(buffer, 0, bytesLidos);
+            }
+
+            System.out.println("Vídeo copiado com sucesso.");
+} catch (Exception e) {
+    System.out.println("Erro ao copiar vídeo: " + e.getMessage());
+}
+System.out.println("==========//=================///=================//=============");
+ System.out.println(" 5_manipulação de imagem");
+ System.out.println("Próxima aula...");
 System.out.println("----//----------//------//--------//------------//-------//----------");
   System.out.println("The End...");
     
-}
+    }
 }
