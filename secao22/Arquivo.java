@@ -1,6 +1,5 @@
 package secao22;
 import java.io.*;
-import java.io.*;
 
 import java.awt.*;
 
@@ -164,8 +163,51 @@ try(BufferedInputStream bis = new BufferedInputStream(new FileInputStream(curren
     System.out.println("Erro ao copiar vídeo: " + e.getMessage());
 }
 System.out.println("==========//=================///=================//=============");
- System.out.println(" 5_manipulação de imagem");
+ System.out.println("08ª_manipulação de imagem");
  System.out.println("Próxima aula...");
+//  Quinta-feira,09/07/2026
+try {
+    BufferedImage imagem = ImageIO.read(new File(currentDir + "imagem.jpeg"));
+   if (imagem == null) {
+      System.out.println("Imagem encontro");
+      return;
+   }
+   Graphics g2d = imagem.createGraphics();
+//    g2d.setFont(new Font( name:"Arial", Font.BOLD, size:50));
+//     FontMetrics fm = g2d.getFontMetrics();
+     g2d.setFont(new Font("Arial", Font.BOLD, 50));
+            FontMetrics fm = g2d.getFontMetrics();
+            String texto = "Texto no Centro";
+            // centralizar texto na imagem
+            int larguraTexto = fm.stringWidth(texto);
+            int alturaTexto = fm.getHeight();
+
+            // posicionamento
+            int x = (imagem.getWidth() - larguraTexto) / 2;
+            int y = (imagem.getHeight() - alturaTexto) / 2 + fm.getAscent();
+
+            // desenhar retangulo
+            g2d.setColor(Color.BLACK);
+            g2d.fillRect(x - 10, y - fm.getAscent(), larguraTexto + 20, alturaTexto);
+
+            // desenhar o texto em cima do retangulo
+            g2d.setColor(Color.RED);
+            g2d.drawString(texto, x, y);
+
+            // liberacao de recursos
+            g2d.dispose();
+
+            // salvar a imagem
+            File outputFile = new File(currentDir + "imagem_com_texto.png");
+
+            ImageIO.write(imagem, "png", outputFile);
+
+            System.out.println("Gerou o texto na imagem com sucesso.");
+
+} catch (Exception e) {
+     System.out.println("Erro ao processar imagem: " + e.getMessage());
+}
+    
 System.out.println("----//----------//------//--------//------------//-------//----------");
   System.out.println("The End...");
     
