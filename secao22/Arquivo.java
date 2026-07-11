@@ -207,7 +207,49 @@ try {
 } catch (Exception e) {
      System.out.println("Erro ao processar imagem: " + e.getMessage());
 }
+System.out.println("==========//=================///=================//=============");
+ System.out.println("09ª_manip. de arquivos e diretorios");
+//  System.out.println("Próxima aula...");
+//  Sexts-feira,10/07/2026
+ Path caminhoDiretorio = Paths.get(currentDir + "diretorioNovo");
+ try {
+       if(!Files.exists(caminhoDiretorio)) {
+                Files.createDirectories(caminhoDiretorio);
+
+                System.out.println("Diretorio criado com sucesso: " + caminhoDiretorio.toString());
+
+            } else {
+
+                System.out.println("Diretório já existe.");
+
+            }
+
+ } catch (Exception e) {
+    System.out.println("Erro ao criar diretorio:" + e.getMessage());
+ }
+ System.out.println("==========//=================///=================//=============");
+ System.out.println("10ª_criar, copiar e mover arquivos");
+ Path caminhoArquivoOriginal = Paths.get(currentDir + "arquivo_criado.txt");
+ try { Path caminhoArquivoCopia = Paths.get(currentDir + "arquivo_criado_copia.txt");
+        Path caminhoArquivoMovido = Paths.get(currentDir, "diretorioNovo", "arquivo_movido.txt");
+     // criar
+            if(!Files.exists(caminhoArquivoOriginal)) {
+                Files.createFile(caminhoArquivoOriginal);
+                System.out.println("Arquivo criado.");
+            }
+
+            // copiar
+            if(!Files.exists(caminhoArquivoCopia)) {
+                Files.copy(caminhoArquivoOriginal, caminhoArquivoCopia);
+            }
+
+            // mover
+            Files.move(caminhoArquivoCopia, caminhoArquivoMovido);
+
+ } catch (Exception e) {
+                System.out.println("Erro ao fazer ações com arquivos: " + e.getMessage());
     
+ }
 System.out.println("----//----------//------//--------//------------//-------//----------");
   System.out.println("The End...");
     
