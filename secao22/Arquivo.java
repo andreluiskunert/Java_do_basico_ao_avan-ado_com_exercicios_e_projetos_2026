@@ -9,7 +9,7 @@ import javax.imageio.ImageIO;
 
 import java.nio.file.*;
 
-import java.util.zip.*;
+// import java.util.zip.*;
 public class Arquivo {
     public static void main(String[] args) {
         System.out.println("------------Manipulação de Arquivos e Diretorios------------");
@@ -250,6 +250,28 @@ System.out.println("==========//=================///=================//=========
                 System.out.println("Erro ao fazer ações com arquivos: " + e.getMessage());
     
  }
+ System.out.println("==========//=================///=================//=============");
+ System.out.println("11ª_ arquivos temporarios");
+//  System.out.println("Próxima aula...");
+//  Sábado_D'Tarde,11/07/2026
+ try {
+            
+            Path arquivoTemporario = Files.createTempFile("meuTempFile", ".txt");
+
+            System.out.println("Arquivo criado em: " + arquivoTemporario.toAbsolutePath());
+
+            Files.writeString(arquivoTemporario, "Conteúdo temporário");
+
+            String conteudo = Files.readString(arquivoTemporario);
+
+            System.out.println("Conteúdo: " + conteudo);
+
+            Files.deleteIfExists(arquivoTemporario);
+
+        } catch (Exception e) {
+            System.out.println("Erro ao criar arquivo temporario: " + e.getMessage());
+        }
+
 System.out.println("----//----------//------//--------//------------//-------//----------");
   System.out.println("The End...");
     
