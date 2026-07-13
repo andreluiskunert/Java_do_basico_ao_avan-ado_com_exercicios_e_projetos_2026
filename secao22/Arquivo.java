@@ -8,6 +8,9 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
 import java.nio.file.*;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
+import java.util.zip.ZipOutputStream;
 
 // import java.util.zip.*;
 public class Arquivo {
@@ -271,6 +274,81 @@ System.out.println("==========//=================///=================//=========
         } catch (Exception e) {
             System.out.println("Erro ao criar arquivo temporario: " + e.getMessage());
         }
+ System.out.println("==========//=================///=================//=============");
+ System.out.println("12ª_ arquivos zip");
+//  System.out.println("Próxima aula...");
+//  Domingo_D'noite,12/07/2026
+  Path arquivoOriginal = Paths.get(currentDir + "arquivo.txt");
+  Path arquivoZip = Paths.get(currentDir + "arquivo_comprimido.zip");
+    try (
+          ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(arquivoZip.toFile()));
+            FileInputStream fis = new FileInputStream(arquivoOriginal.toFile())
+
+    ) {
+        ZipEntry zipEntry = new ZipEntry(arquivoOriginal.getFileName().toString());
+        zos.putNextEntry(zipEntry);
+        byte[] buffer = new byte[1024];
+            int bytesRead;
+
+            while((bytesRead = fis.read(buffer)) != -1) {
+                zos.write(buffer, 0, bytesRead);
+            }
+
+            zos.closeEntry();
+            System.out.println("Arquivo compactado com sucesso.");
+
+
+
+        
+    } catch (Exception e) {
+        System.out.println("Erro ao compactar Arquivo" + e.getMessage());
+    }
+
+System.out.println("==========//=================///=================//=============");
+ System.out.println("13ª_ descomprimir o arquivos zip");
+//  System.out.println("Próxima aula...");
+//  Domingo_D'noite,12/07/2026
+Path arquivoZipado = Paths.get(currentDir + "arquivo_comprimido.zip");
+        Path destino = Paths.get(currentDir + "descompactado");
+
+        try (
+            ZipInputStream zis = new ZipInputStream(new FileInputStream(arquivoZipado.toFile()))
+        ) {
+
+            ZipEntry zipEntry;
+
+            
+            if(!Files.exists(destino)) {
+                Files.createDirectories(destino);
+            }
+
+            while((zipEntry = zis.getNextEntry()) != null) {
+
+                Path caminhoDestino = destino.resolve(zipEntry.getName());
+
+
+                try(FileOutputStream fos = new FileOutputStream(caminhoDestino.toFile())) {
+
+                    // Le o conteudo do arquivo e grava no zip
+                    byte[] buffer = new byte[1024];
+                    int bytesRead;
+
+                    while((bytesRead = zis.read(buffer)) != -1) {
+                        fos.write(buffer, 0, bytesRead);
+                    }
+
+                }
+
+                System.out.println("Arquivo descompactado: " + caminhoDestino);
+
+                zis.closeEntry();
+
+            }
+            
+        } catch (Exception e) {
+            System.out.println("Erro ao descompactar arquivo: " + e.getMessage());
+        }
+
 
 System.out.println("----//----------//------//--------//------------//-------//----------");
   System.out.println("The End...");
