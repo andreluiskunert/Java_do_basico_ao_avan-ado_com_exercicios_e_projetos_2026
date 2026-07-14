@@ -349,7 +349,42 @@ Path arquivoZipado = Paths.get(currentDir + "arquivo_comprimido.zip");
             System.out.println("Erro ao descompactar arquivo: " + e.getMessage());
         }
 
+        System.out.println("==========//=================///=================//=============");
+ System.out.println("15ª_manipulacao csv ");
+//  System.out.println("Próxima aula...");
+//  Segunda-feira_D'noite,13/07/2026
+// Leitura:
+ String arquivoCSV = currentDir + "dados.csv";
+ String linha;
+ String separador = ",";
+ try(BufferedReader br = new BufferedReader(new FileReader(arquivoCSV)) ) {
+    while ((linha = br.readLine()) != null) {
+         String[] dados = linha.split(separador);
 
+                System.out.println("Nome: " + dados[0] + ", Idade: " + dados[1] + ", Cidade: " + dados[2]);
+
+    }
+ } catch (Exception e) {
+   System.out.println("Erro ao escrever em CSV: " + e.getMessage());
+ }
+     // escrita
+        String arquivoEscritaCSV = currentDir + "dadosEscrita.csv";
+
+        try (FileWriter writer = new FileWriter(arquivoEscritaCSV)) {
+            
+            // insercao de linha a linha, respeitando o separador e quebrando linha no final
+            writer.append("Nome,Idade,Cidade\n");
+            writer.append("André,44,Pato Branco_PR\n");
+            writer.append("Maria,45,Florianópolis\n");
+            writer.append("Igor,19,Cachoeirinha\n");
+
+            System.out.println("Conteúdo gravado no CSV com sucesso.");
+
+        } catch (Exception e) {
+            System.out.println("Erro ao escrever em CSV: " + e.getMessage());
+        }
+
+    
 System.out.println("----//----------//------//--------//------------//-------//----------");
   System.out.println("The End...");
     
