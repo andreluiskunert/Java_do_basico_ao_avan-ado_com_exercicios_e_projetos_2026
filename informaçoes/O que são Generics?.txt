@@ -1,0 +1,19 @@
+São uma funcionalidade que permite criar classes, interfaces e métodos que operam com
+tipos de dados parametrizados;
+●
+Introduzidos no Java 5, os Generics ajudam a criar código mais flexível e reutilizável, sem a
+necessidade de definir tipos de dados específicos;
+●
+Objetivo: Permitir que uma estrutura de dados ou método trabalhe com diferentes tipos de dados,
+proporcionando segurança de tipos durante a compilação;
+●
+Generics evitam o uso excessivo de casting e garantem que tipos incorretos não sejam atribuídos a
+coleções ou métodos;
+●
+Usados amplamente em classes de coleções como List, Set, e Map, garantindo que os elementos
+armazenados sejam do tipo correto;
+●
+Benefícios:
+●Segurança de tipos: Erros de tipo são detectados em tempo de compilação;
+●Reutilização de código: Um código genérico pode ser usado para diferentes tipos sem duplicação;
+●Legibilidade: O código se torna mais claro e previsível ao definir explicitamente o tipo de dados;
