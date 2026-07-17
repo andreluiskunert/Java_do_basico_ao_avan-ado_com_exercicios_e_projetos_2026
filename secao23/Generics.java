@@ -38,8 +38,20 @@ public class Generics {
         imprimirArray(bools);
 
         System.out.println();
+  System.out.println("===//===//===//======//======//=======//====");
+          System.out.println("03_bounded types:");
+          // Quinta-feira_D'noite, 16/07/2026
+          // Comparator<Integer> ComparadorInteiros = new Comparador<>();
+Comparador<Integer> comparadorInteiros = new Comparador<>();
 
+        System.out.println("Maior numero entre 20 e 10: " + comparadorInteiros.obterMaior(20, 10));
 
+        Comparador<Double> comparadorInteiros2 = new Comparador<>();
+
+        System.out.println("Maior numero entre 1.95 e 4.55: " + comparadorInteiros2.obterMaior(1.95, 4.55));
+    
+        // Erro de compilação
+        // Comparador<String> comparadorStrings = new Comparador<>();
           System.out.println("----///-----//-----");
         System.out.println(" The End...");
     }
