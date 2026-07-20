@@ -78,7 +78,45 @@ Comparador<Integer> comparadorInteiros = new Comparador<>();
         for(Integer numero : numeros3) {
             System.out.println(numero);
         }
+            System.out.println("===//===//===//======//======//=======//====");
+          System.out.println("05_ generics com collections");
+          // Domingo_D'noite, 19/07/2026
+         List<Integer> listaInteiros = new ArrayList<>();
 
+        listaInteiros.add(10);
+        listaInteiros.add(20);
+        listaInteiros.add(30);
+        listaInteiros.add(25);
+        listaInteiros.add(45);
+
+        // listaInteiros.add(30.1);
+
+        for(Number numero : listaInteiros) {
+            System.out.println(numero);
+        }
+
+        Set<String> conjuntoDePalavras = new HashSet<>();
+
+        conjuntoDePalavras.add("Java");
+        conjuntoDePalavras.add("Java");
+        conjuntoDePalavras.add("Generics");
+
+        for(String palavras : conjuntoDePalavras) {
+            System.out.println(palavras);
+        }
+
+        Map<String, Integer> mapaDeIdades = new HashMap<>();
+
+        mapaDeIdades.put("Matheus", 33);
+        mapaDeIdades.put("Maria", 21);
+        mapaDeIdades.put("João", 18);
+        mapaDeIdades.put("André Luis", 44);
+        mapaDeIdades.put("Eu André Luis, Pretendo ir pra o Canadá,daqui 4 anos, terei", 48 );
+
+
+        for(Map.Entry<String, Integer> entrada : mapaDeIdades.entrySet()) {
+            System.out.println(entrada.getKey() + " tem " + entrada.getValue() + " anos de idade.");
+        }
         
           System.out.println("----///-----//-----");
         System.out.println(" The End...");

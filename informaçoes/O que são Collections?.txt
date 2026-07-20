@@ -1,0 +1,20 @@
+O que são Collections?
+●
+Collections são estruturas de dados que permitem armazenar, organizar e manipular grupos de objetos em
+Java;
+●
+A Java Collections Framework oferece uma biblioteca padrão para manipulação de coleções de dados, como
+listas, conjuntos e mapas;
+● Principais Interfaces:
+
+○List: Uma coleção ordenada de elementos que pode conter duplicatas (ex: ArrayList);
+○Set: Uma coleção que não permite elementos duplicados (ex: HashSet);
+○Map: Uma coleção de pares chave-valor, onde as chaves são únicas (ex: HashMap);
+● Componentes Importantes:
+○Iteradores: Permitem navegar pelos elementos de uma coleção de forma segura e eficiente;
+○Métodos utilitários: Como sort, reverse, e shuffle, facilitam operações comuns em coleções;
+● Obs: veremos alguns exemplos com Collections, e possivelmente teremos uma seção de Collections no curso =)
+
+
+
+
