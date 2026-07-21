@@ -117,7 +117,19 @@ Comparador<Integer> comparadorInteiros = new Comparador<>();
         for(Map.Entry<String, Integer> entrada : mapaDeIdades.entrySet()) {
             System.out.println(entrada.getKey() + " tem " + entrada.getValue() + " anos de idade.");
         }
-        
+          System.out.println("===//===//===//======//======//=======//====");
+          System.out.println("06_generics com interfaces");
+            Armazenamento<String> aTexto = (Armazenamento<String>) new ArmazenamentoTexto();
+
+        aTexto.salvar("teste");
+
+        System.out.println(aTexto.recuperar());
+
+        Armazenamento<Integer> aNumero = new ArmazenamentoNumeros();
+
+        aNumero.salvar(14);
+
+        System.out.println(aNumero.recuperar());
           System.out.println("----///-----//-----");
         System.out.println(" The End...");
     }
