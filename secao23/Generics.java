@@ -130,6 +130,15 @@ Comparador<Integer> comparadorInteiros = new Comparador<>();
         aNumero.salvar(14);
 
         System.out.println(aNumero.recuperar());
+
+          System.out.println("===//===//===//======//======//=======//====");
+          System.out.println("07_Restrição multipla de tipos");
+          // Terça-feira_D'noite,21/07/2026
+          Pato pato = new Pato();
+           CriaturaGenerica<Pato> criaturaPato = new CriaturaGenerica<>(pato);
+
+        criaturaPato.usarHabilidades();
+
           System.out.println("----///-----//-----");
         System.out.println(" The End...");
     }
