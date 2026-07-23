@@ -1,0 +1,18 @@
+Introdução às Collections
+●
+●
+●
+O que são Collections?
+○Collections são estruturas de dados que permitem armazenar, organizar e manipular grupos de objetos em Java;
+○Elas facilitam a manipulação de conjuntos de dados, como listas, conjuntos, filas e mapas;
+Importância das Collections na Programação
+○Proporcionam uma forma eficiente e flexível de manipular grandes quantidades de dados;
+○As Collections eliminam a necessidade de criar estruturas de dados manualmente;
+○Oferecem uma série de métodos úteis para ordenar, buscar, filtrar, adicionar e remover dados;
+Java Collections Framework (JCF)
+○
+A Java Collections Framework é uma biblioteca padrão do Java que oferece um conjunto de classes e interfaces
+para trabalhar com coleções de dados;
+○Fornece implementações de estruturas de dados comuns como List, Set, Map, e Queue;
+○As coleções são altamente flexíveis e genéricas, permitindo que tipos de dados sejam parametrizados com
+Generics;

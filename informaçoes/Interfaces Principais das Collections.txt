@@ -1,0 +1,23 @@
+Interfaces Principais das Collections
+●
+●
+List
+○Armazena elementos ordenados de acordo com a ordem de inserção, aceita elementos duplicados;
+○Acesso rápido a elementos por índice;
+○Implementações: ArrayList, LinkedList;
+○Aplicação: Ideal quando você precisa manter a ordem dos elementos e acessar itens por índice;
+Set
+○
+Armazena uma coleção de elementos únicos (não permite duplicatas),não garante a ordem de inserção, exceto
+com implementações específicas;
+○
+Implementações: HashSet (não ordenado), LinkedHashSet (mantém a ordem de inserção), TreeSet (ordenado
+automaticamente);
+○
+●
+Aplicação: Garantir que não existam duplicatas e a ordem dos elementos não é importante;
+Map
+○Armazena pares chave-valor, onde cada chave é única, não permite chaves duplicadas;
+○Implementações: HashMap, LinkedHashMap, TreeMap;
+○Aplicação: Ideal para armazenar dados com uma associação direta entre chave e valor, como dicionários ou
+catálogos;
