@@ -57,7 +57,7 @@ public static void main(String[] args) {
         numeros.set(0, 23);
 
         System.out.println(numeros.get(0));
-
+// 
         // As collections tem os mesmos métodos, qualquer uma
         // mas nem todas, podem aplicá-los
 
