@@ -1,0 +1,16 @@
+ArrayList vs LinkedList
+●
+ArrayList
+○Acesso Rápido: Acesso eficiente por índice.
+○Inserção/Remoção Lenta: Operações de inserção e remoção são lentas em grandes listas,
+especialmente no início/meio da lista.
+○
+●
+Melhor para leitura frequente: Ideal quando há mais operações de leitura do que de modificação.
+LinkedList
+○
+Inserção/Remoção Rápida: Operações de inserção e remoção são rápidas, especialmente em
+qualquer posição da lista.
+○Acesso Lento: Acesso por índice é mais lento devido à estrutura encadeada.
+○Melhor para inserção/remoção frequente: Ideal para cenários com muitas modificações nos
+dados.
