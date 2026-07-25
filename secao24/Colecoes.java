@@ -1,12 +1,18 @@
 package secao24;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
+import java.util.Iterator;
 
 public class Colecoes {
     // Quarta-feira_D'noite,22/07/2026
@@ -82,10 +88,7 @@ System.out.println(numeros1.get(0));
 System.out.println(numeros1.toString());
 System.out.println("Obs.:As collections tem os mesmos métodos, qualquer uma\n" + //
    "         mas nem todas, podem aplicá-los ");
-System.out.println("===//===//===//===//===//===//===//===//===");
-  System.out.println("03_Set");
-//   Quinta-feira_D'Noite, 23/07/2026
- 
+
         System.out.println("HashSet - reordena os elementos");
         Set<String> conjunto = new HashSet<>();
 
@@ -129,6 +132,103 @@ System.out.println("===//===//===//===//===//===//===//===//===");
 
         System.out.println(" Set não tem get\n" + //
                         "         System.out.println(nomes.get(0));");
+
+
+System.out.println("===//===//===//===//===//===//===//===//===");
+  System.out.println("04_Map");
+// Sábado_D'tarde, 25/07/2026
+System.out.println("1ªHashMap");
+ Map<String, Integer> idadeMap = new HashMap<>();
+ System.out.println("Os valores do professores");
+ System.out.println("adiciona no map com o put");
+   idadeMap.put("João", 30);
+   idadeMap.put("Matheus", 33);
+   idadeMap.put("Alan", 18);
+   System.out.println(idadeMap);
+    idadeMap.put("Alan", 24);
+
+        System.out.println(idadeMap);
+         System.out.println("Idade de Alan: " + idadeMap.get("Alan"));
+   System.out.println(" map com chave ja existente, atualiza valor");
+   System.out.println("Meus valores_Da última Republica Cristã");
+     idadeMap.put("Lucas Camargo",  25);
+   idadeMap.put("Jean Cardoso",   30);
+   idadeMap.put("Luis Carlos",   44);
+   idadeMap.put("André Luis",   44);
+   System.out.println(idadeMap);
+    
+     System.out.println("Remove elementos");
+        idadeMap.remove("Matheus");
+
+        System.out.println(idadeMap);
+
+        //
+        System.out.println(" encontrando por chave, e por valor");
+        System.out.println(idadeMap.containsKey("Alan"));
+        System.out.println(idadeMap.containsValue(99));
+
+        // 
+        System.out.println("exibe valores");
+        System.out.println(idadeMap.entrySet());
+
+        // 
+        System.out.println("LinkedHashMap");
+        Map<String, String> capitalMap = new LinkedHashMap<>();
+
+        capitalMap.put("Brasil", "Brasília");
+        capitalMap.put("Argentina", "Buenos Aires");
+        capitalMap.put("França", "Paris");
+
+        System.out.println(capitalMap.entrySet());
+
+        System.out.println(capitalMap.containsKey("Brasil"));
+
+        // TreeMap - reordena os itens
+        Map<String, Double> produtoPrecoMap = new TreeMap<>();
+
+        produtoPrecoMap.put("Maçã", 3.50);
+        produtoPrecoMap.put("Pera", 4.50);
+        produtoPrecoMap.put("Leite", 5.50);
+        produtoPrecoMap.put("Avelã", 11.0);
+
+        System.out.println(produtoPrecoMap);
+
+        System.out.println(produtoPrecoMap.containsValue(11.0));
+        System.out.println("===//===//===//===//===//===//===//===//===");
+  System.out.println("05_iterando");
+// Sábado_D'tarde, 25/07/2026
+         System.out.println(" for-each");
+        for(String nome : nomes) {
+            System.out.println(nome);
+        }
+
+        // Iterator
+        Iterator<String> nomesIterator = nomes.iterator();
+
+        // remover um elemento
+        while(nomesIterator.hasNext()) {
+
+            String nome = nomesIterator.next();
+
+            if(nome.equals("João")) {
+                nomesIterator.remove();
+            }
+
+        }
+
+        System.out.println(nomes);
+
+        // ListIterator
+        ListIterator<String> listIteratorNomes = listaDeNomes.listIterator();
+
+        while(listIteratorNomes.hasNext()) {
+            System.out.println("Nome: " + listIteratorNomes.next());
+        }
+
+        while(listIteratorNomes.hasPrevious()) {
+            System.out.println("Nome: " + listIteratorNomes.previous());
+        }
+ 
 
 System.out.println( );
 System.out.println("---//---//-----//---//---//-----//---//---//-----");
