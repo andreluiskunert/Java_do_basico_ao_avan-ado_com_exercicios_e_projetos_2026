@@ -1,6 +1,7 @@
 package secao24;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -229,6 +230,36 @@ System.out.println("1ªHashMap");
             System.out.println("Nome: " + listIteratorNomes.previous());
         }
  
+   System.out.println("===//===//===//===//===//===//===//===//===");
+  System.out.println("06_ collections imutaveis");
+// Sábado_D'noite, 25/07/2026
+ // 
+ System.out.println("§criando lista imutavel");
+        List<String> listaMutavel = new ArrayList<>();
+
+        listaMutavel.add("teste");
+        listaMutavel.add("testando");
+
+        List<String> listaImutavel = Collections.unmodifiableList(listaMutavel);
+
+        System.out.println(listaImutavel);
+
+        //
+        System.out.println("  n podemos adicionar novos elementos\n" + //
+                    "        listaImutavel.add(\"teste2\");");
+
+        List<String> listaImutavel2 = List.of("item 1", "item 2", "item 3");
+
+        // listaImutavel2.add("Item 4");
+      
+
+        System.out.println(listaImutavel2);
+
+        Set<Integer> listaImutavelSet = Set.of(1, 2, 3);
+
+        // 
+        System.out.println("listaImutavelSet.add(4);");
+        System.out.println(listaImutavelSet);
 
 System.out.println( );
 System.out.println("---//---//-----//---//---//-----//---//---//-----");
