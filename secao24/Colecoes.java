@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+import java.util.stream.Collectors;
 import java.util.Iterator;
 
 public class Colecoes {
@@ -260,7 +261,16 @@ System.out.println("1ªHashMap");
         // 
         System.out.println("listaImutavelSet.add(4);");
         System.out.println(listaImutavelSet);
+   System.out.println("===//===//===//===//===//===//===//===//===");
+  //  Domingo_D'noite, 26/06/2026
+  System.out.println("07_ filter");
+  List<Integer> numerosFiltrados = numeros.stream()
+                                   .filter(numero -> numero > 3)
+                                   .collect(Collectors.toList());
+    System.out.println("Os numeros são: " +  numerosFiltrados);
+    System.out.println("Lista Original: " + numeros);
 
+        
 System.out.println( );
 System.out.println("---//---//-----//---//---//-----//---//---//-----");
 System.out.println(" .....That's all for today, folks.... ");
