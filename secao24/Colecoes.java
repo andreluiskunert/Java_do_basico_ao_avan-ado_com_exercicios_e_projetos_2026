@@ -10,6 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -262,7 +263,7 @@ System.out.println("1ªHashMap");
         System.out.println("listaImutavelSet.add(4);");
         System.out.println(listaImutavelSet);
    System.out.println("===//===//===//===//===//===//===//===//===");
-  //  Domingo_D'noite, 26/06/2026
+  //  Domingo_D'noite, 26/07/2026
   System.out.println("07_ filter");
   List<Integer> numerosFiltrados = numeros.stream()
                                    .filter(numero -> numero > 3)
@@ -270,7 +271,40 @@ System.out.println("1ªHashMap");
     System.out.println("Os numeros são: " +  numerosFiltrados);
     System.out.println("Lista Original: " + numeros);
 
-        
+   System.out.println("===//===//===//===//===//===//===//===//===");
+  //  Segunda-feira_D'noite, 27/07/2026
+  System.out.println("08_Busca");
+  System.out.println("01ª For:");
+  int numeroParaEncontrar = 5;
+  boolean encontrou = false;
+
+  for(Integer numero: numeros){
+    if (numero == numeroParaEncontrar) {
+        encontrou = true;
+    }
+  }
+  System.out.println(numeros);
+  System.out.println("Encontrou?" + encontrou);
+  System.out.println("02ªContains");
+   String nomeBuscado = "Maria";
+        boolean encontrou2 = nomes.contains(nomeBuscado);
+
+        System.out.println(nomes);
+        System.out.println("Entrou nome? " + encontrou2);
+
+        // 
+        System.out.println("03ªfindAny");
+        Optional<Integer> qualquerNumero = numeros.stream().findAny();
+
+        System.out.println(qualquerNumero);
+
+        Optional<Integer> primeiroNumero = numeros.stream().findFirst();
+
+        System.out.println(primeiroNumero);
+
+        Optional<Integer> primeiroPar = numeros.stream().filter(num -> num % 2 == 0).findFirst();
+
+        System.out.println(primeiroPar);
 System.out.println( );
 System.out.println("---//---//-----//---//---//-----//---//---//-----");
 System.out.println(" .....That's all for today, folks.... ");
