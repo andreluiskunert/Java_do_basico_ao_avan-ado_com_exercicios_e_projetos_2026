@@ -305,6 +305,51 @@ System.out.println("1ªHashMap");
         Optional<Integer> primeiroPar = numeros.stream().filter(num -> num % 2 == 0).findFirst();
 
         System.out.println(primeiroPar);
+   System.out.println("===//===//===//===//===//===//===//===//===");
+   System.out.println("09_Map");
+  //  segunda-feira_D'noite,28/07/2026
+  System.out.println(" modificam a collection");
+  List<Integer> quadrados = numeros.stream().map(n -> n * n).collect(Collectors.toList());
+    System.out.println("O numero é :" + numeros);
+        System.out.println("O quadrado é : " + quadrados);
+
+        List<String> nomesMaiusculos = nomes.stream()
+                                            .map(String::toUpperCase)
+                                            .collect(Collectors.toList());
+
+        System.out.println("Os nomes Maisculos são :" + nomesMaiusculos); 
+        System.out.println("===//===//===//===//===//===//===//===//===");
+   System.out.println("10_modificação");
+  //  segunda-feira_D'noite,28/07/2026
+  System.out.println(" adiciona novo el.");
+     //
+        numeros.add(50);
+
+        System.out.println(numeros);
+
+        // 
+        System.out.println("remove elementos pelo valor");
+        numeros.remove(Integer.valueOf(3));
+
+        System.out.println(numeros);
+
+        //
+        System.out.println(" alterar todos os elementos");
+        numeros.replaceAll(numero -> numero * 3);
+
+        System.out.println(numeros);
+
+        numeros.add(201);
+        numeros.add(205);
+        numeros.add(208);
+
+        System.out.println(numeros);
+
+        // 
+        System.out.println("remocao baseada em condicao");
+        numeros.removeIf(numero -> numero > 200);
+
+        System.out.println(numeros);
 System.out.println( );
 System.out.println("---//---//-----//---//---//-----//---//---//-----");
 System.out.println(" .....That's all for today, folks.... ");
