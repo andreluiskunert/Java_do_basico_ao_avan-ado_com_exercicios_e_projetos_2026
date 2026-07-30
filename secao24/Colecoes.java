@@ -307,7 +307,7 @@ System.out.println("1ªHashMap");
         System.out.println(primeiroPar);
    System.out.println("===//===//===//===//===//===//===//===//===");
    System.out.println("09_Map");
-  //  segunda-feira_D'noite,28/07/2026
+  //  segunda-feira_D'noite,27/07/2026
   System.out.println(" modificam a collection");
   List<Integer> quadrados = numeros.stream().map(n -> n * n).collect(Collectors.toList());
     System.out.println("O numero é :" + numeros);
@@ -320,7 +320,7 @@ System.out.println("1ªHashMap");
         System.out.println("Os nomes Maisculos são :" + nomesMaiusculos); 
         System.out.println("===//===//===//===//===//===//===//===//===");
    System.out.println("10_modificação");
-  //  segunda-feira_D'noite,28/07/2026
+  //  Terça-feira_D'noite,28/07/2026
   System.out.println(" adiciona novo el.");
      //
         numeros.add(50);
@@ -350,6 +350,14 @@ System.out.println("1ªHashMap");
         numeros.removeIf(numero -> numero > 200);
 
         System.out.println(numeros);
+               System.out.println("===//===//===//===//===//===//===//===//===");
+   System.out.println("11_Reduce");
+  //  Quarta-feira_D'noite,29/07/2026
+  int soma = numeros.stream().reduce(0, (acumulador, numero)-> acumulador + numero);
+ System.out.println("Soma de Todos os números : " + soma + ";" );
+ System.out.println("Constatenação de Variaveis: ");
+  String frase = nomes.stream().reduce("",(concatenador, nome)-> concatenador + "" + nome);
+System.out.println("Todos os nomes são : " + frase + ";");
 System.out.println( );
 System.out.println("---//---//-----//---//---//-----//---//---//-----");
 System.out.println(" .....That's all for today, folks.... ");
