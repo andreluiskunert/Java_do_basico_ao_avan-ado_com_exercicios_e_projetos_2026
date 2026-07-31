@@ -196,7 +196,7 @@ public class POO {
 
         // 6 - Logica em get e set
 
-        Produto camisa = new Produto();
+        Produto camisa = new Produto(null, null);
 
         camisa.setNome("Camisa regata");
 

@@ -77,6 +77,11 @@ public class Produto {
 
     private String nome;
     private double preco;
+    public Object categoria;
+
+    public Produto(String string, String string2) {
+        
+    }
 
     // REGRA DE NEGOCIOS = CODIGO
     // é como a empresa define que o software vai funcionar

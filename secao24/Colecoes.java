@@ -1,7 +1,9 @@
 package secao24;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -15,6 +17,9 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
+
+import secao17.Produto;
+
 import java.util.Iterator;
 
 public class Colecoes {
@@ -358,6 +363,102 @@ System.out.println("1ªHashMap");
  System.out.println("Constatenação de Variaveis: ");
   String frase = nomes.stream().reduce("",(concatenador, nome)-> concatenador + "" + nome);
 System.out.println("Todos os nomes são : " + frase + ";");
+    System.out.println("===//===//===//===//===//===//===//===//===");
+   System.out.println("12_ordenacao com comparator");
+  //  Quinta-feira_D'noite, 30/07/2026
+  List<Pessoa> pessoas = new ArrayList<>();
+  System.out.println("Lista do Professor");
+    pessoas.add(new Pessoa("Pedro", 33));
+        pessoas.add(new Pessoa("Ana", 25));
+        pessoas.add(new Pessoa("João", 67));
+        pessoas.add(new Pessoa("Maria", 18));
+        pessoas.add(new Pessoa("Rodrigo", 40));
+        pessoas.add(new Pessoa("Ana", 19));
+          pessoas.add(new Pessoa("Pedro", 33));
+        System.out.println("Minha lista:");
+        pessoas.add(new Pessoa("Luis Carlos", 45));
+        pessoas.add(new Pessoa("Jean Cardoso", 35));
+        pessoas.add(new Pessoa("Lucas Camargo", 25));
+        pessoas.add(new Pessoa("Josias Caldas", 19));
+        pessoas.add(new Pessoa("André Luis", 44));
+        // 
+        System.out.println("ordenar pelo nome:");
+        pessoas.sort(Comparator.comparing(Pessoa::getNome));
+
+        for(Pessoa pessoa : pessoas) {
+            System.out.println(pessoa);
+        }
+
+        System.out.println("Ordenar pelo nome e idade:");
+        pessoas.sort(Comparator.comparing(Pessoa::getNome)
+                                .thenComparing(Pessoa::getIdade));
+        
+        for(Pessoa pessoa : pessoas) {
+            System.out.println(pessoa);
+        }
+
+  System.out.println("ordenar pelo nome");
+   System.out.println("===//===//===//===//===//===//===//===//===");
+   System.out.println("13_uso avançado de streams");
+  //  Quinta-feira_D'noite, 30/07/2026
+   // 
+   System.out.println("flatMap - achatar listas:");
+        List<List<String>> listaDeListas = Arrays.asList(
+            Arrays.asList("Maçã", "Morango"),
+            Arrays.asList("Banana", "Mamão"),
+            Arrays.asList("Uva", "Melão")
+        );
+
+        List<String> listUnica = listaDeListas.stream()
+                                              .flatMap(List::stream)
+                                              .collect(Collectors.toList());
+
+        System.out.println(listUnica);
+
+        //
+        System.out.println(" pipeline");
+        List<Integer> resultado = numeros.stream()
+                                         .filter(n -> n % 2 == 0) // filtro de nums. pares
+                                         .map(n -> n * 5) // multiplicacao
+                                         .sorted() // ordenacao
+                                         .collect(Collectors.toList());
+
+        System.out.println(numeros);
+        System.out.println(resultado);
+System.out.println("===//===//===//===//===//===//===//===//===");
+   System.out.println("14_uso avançado de streams");
+  //  Quinta-feira_D'noite, 30/07/2026
+    // 13 - 
+    System.out.println("Collectors");
+        List<Produto> produtos = Arrays.asList(
+            new Produto("Camisa", "Roupas"),
+            new Produto("TV", "Eletrônicos"),
+            new Produto("Rádio", "Eletrônicos"),
+            new Produto("Sofá", "Móveis"),
+            new Produto("Mesa", "Móveis")
+        );
+
+        //
+        System.out.println(" agrupar por categoria");
+        List<Produto> produtosPorCategoria = (List<Produto>) produtos.stream()
+                                                                  .collect(Collectors.groupingBy(p -> p.categoria));
+
+        System.out.println(produtos);
+
+        System.out.println(produtosPorCategoria);
+
+        // 
+        System.out.println("Particionar");
+        Map<Boolean, List<Produto>> eletronicosENaoEletronicos = produtos.stream()
+                                                                         .collect(Collectors.partitioningBy(p -> p.categoria.equals("Eletrônicos")));
+
+        System.out.println(eletronicosENaoEletronicos);
+
+        // Contando quantos produtos existem
+        long totalProdutos = produtos.stream()
+                                     .collect(Collectors.counting());
+
+        System.out.println(totalProdutos);
 System.out.println( );
 System.out.println("---//---//-----//---//---//-----//---//---//-----");
 System.out.println(" .....That's all for today, folks.... ");
