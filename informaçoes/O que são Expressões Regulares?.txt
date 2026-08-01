@@ -1,0 +1,18 @@
+O que são Expressões Regulares?
+●Expressões Regulares (Regex) são padrões utilizados para procurar e manipular texto;
+●Elas permitem verificar se um padrão de caracteres aparece em uma string, como números, letras ou
+símbolos;
+●
+São amplamente usadas para validação, extração e substituição de texto em diversas linguagens de
+programação;
+●
+A regex usa metacaracteres e sequências especiais para definir padrões complexos, como .
+(qualquer caractere), * (zero ou mais ocorrências) e [] (conjunto de caracteres);
+●
+Em Java, expressões regulares são manipuladas com as classes Pattern e Matcher do pacote
+java.util.regex;
+●
+Regex é muito utilizada para validações como verificar e-mails, números de telefone, senhas, e
+formatos de datas;
+●
+Elas podem variar de simples a extremamente complexas, dependendo do padrão a ser definido;
