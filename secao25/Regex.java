@@ -111,6 +111,34 @@ public class Regex {
 
         System.out.println("Texto após substituição: " + textoSubstituido);
 System.out.println();
+        System.out.println("---//-----///---///-----/////--------////------");
+        System.out.println(" 04ºavançando em pattern e matcher");
+        // Domingo_D'noite,02/08/2026
+        System.out.println("§ correspondencia parcial:");
+        regex = "\\d{2}";
+        texto= "123ABC456";
+            pattern = Pattern.compile(regex);
+            matcher = pattern.matcher(texto);
+         System.out.println("þ Posicao das correspondencias");
+         while (matcher.find()) {
+            System.out.println("§ Quando eu tiver uma ocorrencia, o start é onde comeca e o end onde termina:");
+            // 
+            System.out.println("Encontrado: " + matcher.group() + ", começa em " + matcher.start() + " e termina em " + matcher.end());
+
+         }
+         System.out.println("§ quote para tratar caracteres literais:");
+ //       
+        String literalRegex = Pattern.quote("resultado");
+        texto = "A equação correta é 1+1=2 e é o resultado do exercício";
+
+        pattern = Pattern.compile(literalRegex);
+        matcher = pattern.matcher(texto);
+
+        System.out.println("Caracteres literais");
+        if(matcher.find()) {
+            System.out.println("Encontrado: " + matcher.group());
+            System.out.println(matcher.start() + " - " + matcher.end());
+        }
 
         System.out.println("----- That's all for today, Java folks..... ");
         System.out.println("                    The End             ");
