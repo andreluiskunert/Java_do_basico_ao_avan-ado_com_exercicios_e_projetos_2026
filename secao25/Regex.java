@@ -139,6 +139,58 @@ System.out.println();
             System.out.println("Encontrado: " + matcher.group());
             System.out.println(matcher.start() + " - " + matcher.end());
         }
+          System.out.println("---//-----///---///-----/////--------////------");
+        System.out.println(" 05º expressoes avançadas");
+        // Segunda-feira_D'noite,03/08/2026
+        System.out.println("1ªLookahead positivo:");
+        String regexLookAhead = "\\d+(?=\\$)";
+        texto = "Preços: 100$ 200$ $300 $400";
+        System.out.println("Obs.: lookahead positivo -> DO QUE A GENTE SINALIZOU PARA TRÁS");
+   
+        pattern = Pattern.compile(regexLookAhead);
+        matcher = pattern.matcher(texto);
+        System.out.println("Lookahead positivo");
+        while (matcher.find()) {
+             System.out.println("Encontrou: " + matcher.group());
+        }
+        System.out.println(" lookbehind positivo -> PARA FRENTE DO QUE A GENTE DEFINIU");
+          String regexLookBehind = "(?<=\\$)\\d+";
+        texto = "Preços: 100$ 200$ $300 $400";
+
+        pattern = Pattern.compile(regexLookBehind);
+        matcher = pattern.matcher(texto);
+
+        System.out.println("Lookbehind positivo");
+        while (matcher.find()) {
+            System.out.println("Encontrou: " + matcher.group());
+        }
+
+        // lookahead negativo
+        // que vai encontrar palavras QUE NÃO TEM (negativo) ponto final
+        // w -> a-z != é
+        String regexLookAheadNegativo = "\\b\\w+\\b(?!\\.)";
+        texto = "Esta é uma frase. E esta é outra";
+
+        pattern = Pattern.compile(regexLookAheadNegativo);
+        matcher = pattern.matcher(texto);
+
+        System.out.println("Lookahead negativo");
+        while (matcher.find()) {
+            System.out.println("Encontrou: " + matcher.group());
+        }
+
+        // lookbehind negativo
+        // Todas as palavras que não são precedidas por #
+        String regexLookBehindNegativo = "(?<!#)\\b\\w+\\b";
+        texto = "#java #javascript #php python";
+
+        pattern = Pattern.compile(regexLookBehindNegativo);
+        matcher = pattern.matcher(texto);
+
+        System.out.println("Lookbehind negativo");
+        while (matcher.find()) {
+            System.out.println("Encontrou: " + matcher.group());
+        }
 
         System.out.println("----- That's all for today, Java folks..... ");
         System.out.println("                    The End             ");
