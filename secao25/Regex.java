@@ -164,10 +164,9 @@ System.out.println();
         while (matcher.find()) {
             System.out.println("Encontrou: " + matcher.group());
         }
-
-        // lookahead negativo
-        // que vai encontrar palavras QUE NÃO TEM (negativo) ponto final
-        // w -> a-z != é
+        // terça-feira,04/08/2026_D'noite
+ System.out.println("lookahead negativo que vai encontrar palavras QUE NÃO TEM (negativo) ponto final  // w -> a-z != é");
+        
         String regexLookAheadNegativo = "\\b\\w+\\b(?!\\.)";
         texto = "Esta é uma frase. E esta é outra";
 
@@ -178,9 +177,9 @@ System.out.println();
         while (matcher.find()) {
             System.out.println("Encontrou: " + matcher.group());
         }
-
-        // lookbehind negativo
-        // Todas as palavras que não são precedidas por #
+         System.out.println("lookbehind negativo\n" + //
+                          " Todas as palavras que não são precedidas por #");
+        
         String regexLookBehindNegativo = "(?<!#)\\b\\w+\\b";
         texto = "#java #javascript #php python";
 
@@ -191,10 +190,49 @@ System.out.println();
         while (matcher.find()) {
             System.out.println("Encontrou: " + matcher.group());
         }
+          // 6 - 
+        System.out.println("---//-----///---///-----/////--------////------");
+        System.out.println(" 06º validacao ddata e horario");
+       
+
+        String regexData = "^([0-2][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$";
+        String[] datas = {"04/07/2026", "30/30/2000", "29/01/1999"};
+
+        System.out.println("Validar data DD/MM/YYYY");
+        for(String data : datas) {
+            if(validarRegex(data, regexData)) {
+                System.out.println("Data válida: " + data);
+            } else {
+                System.out.println("Data Inválida: " + data);
+            }
+        }
+
+        // Validação horário HH:MM:SS
+        String regexHorario = "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$";
+        String[] horarios = {"23:25:12", "23:33:32", "99:01:01"};
+
+        System.out.println("Validar horário HH:MM:SS");
+        for(String hora : horarios) {
+            if(validarRegex(hora, regexHorario)) {
+                System.out.println("hora válida: " + hora);
+            } else {
+                System.out.println("hora Inválida: " + hora);
+            }
+        }
+
 
         System.out.println("----- That's all for today, Java folks..... ");
         System.out.println("                    The End             ");
 
+    }
+
+    private static boolean validarRegex(String data, String regexData) {
+         String regex = null;
+         Pattern pattern = Pattern.compile(regex);
+        CharSequence texto = null;
+        Matcher matcher = pattern.matcher(texto);
+
+        return matcher.matches();
     }
     
 
