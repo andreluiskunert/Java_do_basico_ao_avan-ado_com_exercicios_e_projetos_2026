@@ -219,17 +219,34 @@ System.out.println();
                 System.out.println("hora Inválida: " + hora);
             }
         }
-
+   System.out.println("---//-----///---///-----/////--------////------");
+        System.out.println(" 07ºflags");
+        // Quarta-feira_D'noite, 05/08/2026
+        System.out.println("1ª CASE_INSENSITIVE - q vai ignorar maiusculas e minusculas");
+        regex = "java";
+        texto = "Java é very Good Guys, É legal aprender JAVA e JaVa não é tão difícil.";
+        pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+        matcher = pattern.matcher(texto);
+        while (matcher.find()) {
+            System.out.println("ENcontrado : " + matcher.group());
+        }
+        System.out.println("2ª  Flag MULTILINE (correspondencia por linha)");
+        regex ="^\\d+";
+        texto = "123 esta pulando corta\nPula,Pula\n4567 até cansar";
+          pattern = Pattern.compile(regex, Pattern.MULTILINE);
+        matcher = pattern.matcher(texto);
+        
+        while(matcher.find()) {
+            System.out.println("ENcontrado: " + matcher.group());
+        }
 
         System.out.println("----- That's all for today, Java folks..... ");
         System.out.println("                    The End             ");
 
     }
 
-    private static boolean validarRegex(String data, String regexData) {
-         String regex = null;
-         Pattern pattern = Pattern.compile(regex);
-        CharSequence texto = null;
+     public static boolean validarRegex(String texto, String regex) {
+        Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
 
         return matcher.matches();
