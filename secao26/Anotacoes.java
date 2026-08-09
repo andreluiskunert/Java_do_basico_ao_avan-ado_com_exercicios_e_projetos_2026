@@ -51,6 +51,7 @@
 package secao26;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 
 public class Anotacoes {
 
@@ -101,6 +102,49 @@ public class Anotacoes {
             }
         }
 
+        System.out.println("==//==//==//==//==//==//==//==//==//==//==//==");
+
+        System.out.println("03ª - annotation para validar campos ");
+        // sábados_D'noite, 08/08/2026
+        Usuario usuario = new Usuario("Andre Luis", "pesquisador036@gmail.com");
+        validarCampos(usuario);
+
+        Usuario usuario2 = new Usuario("", "");
+        validarCampos(usuario2);
+
         System.out.println("That's all for today, Java folks.");
+    }
+
+    // funcao para validar campos anotados
+    public static void validarCampos(Object objeto) throws IllegalArgumentException {
+
+        // Pegar a classe, pegar os campos, verificar se eles tem annotation
+        Class<?> classe = objeto.getClass();
+
+        for (Field campo : classe.getDeclaredFields()) {
+
+            if (campo.isAnnotationPresent(NotEmpty.class)) {
+
+                // saber o valor de message de cada campo
+                NotEmpty anotacao = campo.getAnnotation(NotEmpty.class);
+
+                // ativar a acessibilidade do campo privado
+                campo.setAccessible(true);
+
+                try {
+                    Object valor = campo.get(objeto);
+
+                    // validar o campo
+                    if (valor == null || valor.toString().isEmpty()) {
+                        System.out.println(anotacao.message());
+                    }
+
+                } catch (Exception e) {
+                    System.out.println("Erro: " + e.getMessage());
+                }
+            }
+        }
+        System.out.println("--//-----///------////-------///----------////-------");
+        System.out.println("That's all for today, Java folks");
     }
 }
