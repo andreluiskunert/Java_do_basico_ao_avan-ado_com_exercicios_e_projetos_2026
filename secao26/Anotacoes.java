@@ -144,6 +144,20 @@ public class Anotacoes {
                 }
             }
         }
+           System.out.println("==//==//==//==//==//==//==//==//==//==//==//==");
+
+        System.out.println("04ª - annotation com processador");
+        // Domingo_D'noite, 09/08/2026
+        Servico servico = new Servico();
+
+            try {
+                
+                LogProcessor.processarLogs(servico);
+
+            } catch (Exception e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
+
         System.out.println("--//-----///------////-------///----------////-------");
         System.out.println("That's all for today, Java folks");
     }
