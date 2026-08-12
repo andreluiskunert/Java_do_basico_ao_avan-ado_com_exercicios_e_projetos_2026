@@ -1,0 +1,14 @@
+Como instalar e executar o JavaFX
+●Documentação oficial de instalação: clique aqui.
+●Primeiramente precisamos baixar o JavaFX no site oficial, e extrair os arquivos para uma pasta;
+●Depois vamos abrir o VS Code e criar uma pasta para a seção;
+●Acesse a opção Help -> Show All Commands -> Create Java Project, e selecione No build tools;
+●Selecione a pasta pai (pasta da seção), e nomeio o projeto, por exemplo: HelloWorldFX;
+●Agora em Java Projects, podemos adicionar os arquivos de JavaFX em Referenced Libraries;
+●Delete o arquivo criado automaticamente com o nome de App.java;
+●Crie uma pasta com o nome do projeto em src, exemplo: helloworldfx;
+●Adicione os arquivos Main, fxml e Controller, que são fornecidos pela documentação;
+●Vá até a aba Run and Debug do VS Code, e seleciona a opção Create json file;
+●Configure o valor de vmArgs no launch.json, conforme a documentação indica;
+●Adapte o arquivo Main e .fxml para o nome que foi criado, pois está com o nome da documentação;
+●Altere a mensagem do setText e execute o arquivo! =)
