@@ -1,0 +1,12 @@
+O que é JavaFX?
+●JavaFX é uma biblioteca de software para criar interfaces gráficas de usuário (GUIs) em Java;
+●Substitui o antigo Swing como principal biblioteca gráfica no Java;
+●Permite o desenvolvimento de aplicações desktop e RIAs (Rich Internet Applications) com Java;
+●Oferece suporte a diversos tipos de componentes gráficos: botões, tabelas, gráficos, etc;
+●Utiliza uma abordagem baseada em cena e nó (Scene Graph), onde os elementos gráficos são
+organizados em uma estrutura de árvore;
+●Possui integração com CSS para estilização e com FXML, um formato XML para descrever a interface;
+●Suporta animações, multimídia e a criação de gráficos 2D e 3D;
+●Funciona em diferentes plataformas: Windows, Mac e Linux;
+●Ideal para o desenvolvimento de aplicações, como ferramentas de visualização, jogos simples e
+softwares empresariais;
