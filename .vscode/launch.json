@@ -9,7 +9,8 @@
             "name": "App",
             "request": "launch",
             "mainClass": "App",
-            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d",
+            "vmArgs": "--module-path <olvedor-full-stack/Downloads/JavaFX/openjfx/javafx-sdk-21.0.2> --add-modules javafx.co"
         },
         {
             "type": "java",
