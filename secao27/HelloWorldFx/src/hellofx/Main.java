@@ -1,4 +1,4 @@
-package secao27.HelloWorldFx.src.helloworldfx;
+package hellofx;
 
 
 import javafx.application.Application;
@@ -12,8 +12,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("helloworldfx.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 400, 300));
+        primaryStage.setTitle("Hello World 2");
+        primaryStage.setScene(new Scene(root, 600, 300));
         primaryStage.show();
     }
 

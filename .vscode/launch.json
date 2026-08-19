@@ -6,11 +6,32 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "hellofx.Main",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "helloworldfx.Main",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
             "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d",
-            "vmArgs": "--module-path <olvedor-full-stack/Downloads/JavaFX/openjfx/javafx-sdk-21.0.2> --add-modules javafx.co"
+            "vmArgs": "--module-path <JavaFX_lib_path> --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
