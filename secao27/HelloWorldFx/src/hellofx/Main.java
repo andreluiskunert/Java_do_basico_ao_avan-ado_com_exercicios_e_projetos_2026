@@ -1,6 +1,5 @@
 package hellofx;
 
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,12 +10,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        // Certifique-se de que o nome do arquivo aqui está exatamente igual ao seu
         Parent root = FXMLLoader.load(getClass().getResource("helloworldfx.fxml"));
-        primaryStage.setTitle("Hello World 2");
-        primaryStage.setScene(new Scene(root, 600, 300));
+        primaryStage.setTitle("Minha Primeira Tela JavaFX");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

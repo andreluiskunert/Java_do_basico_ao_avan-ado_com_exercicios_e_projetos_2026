@@ -2,26 +2,32 @@
     // Use o IntelliSense para saber mais sobre os atributos possíveis.
     // Focalizar para exibir as descrições dos atributos existentes.
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+  
+    // "version": "0.2.0",
+    // "configurations": [
+    //     {
+    //         "type": "java",
+    //         "name": "Executar JavaFX",
+    //         "request": "launch",
+    //         "mainClass": "hellofx.Main",
+    //         "vmArgs": "--module-path /home/desenvolvedor-full-stack/javafx-sdk-21/lib --add-modules javafx.controls,javafx.fxml"
+    //     }
+    // ]
+    
     "version": "0.2.0",
     "configurations": [
         {
             "type": "java",
-            "name": "Main",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Executar JavaFX",
             "request": "launch",
             "mainClass": "hellofx.Main",
-            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "helloworldfx.Main",
-            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+            "vmArgs": "--module-path /home/desenvolvedor-full-stack/javafx-sdk-21/lib --add-modules javafx.controls,javafx.fxml"
         }
+    ]
+}

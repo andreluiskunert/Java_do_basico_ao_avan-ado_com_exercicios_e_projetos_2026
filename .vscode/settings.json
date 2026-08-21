@@ -1,5 +1,6 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
+    "java.debug.settings.vmArgs": "--module-path /home/desenvolvedor-full-stack/Downloads/JavaFX/openjfx/javafx-sdk-21.0.2/lib --add-modules javafx.controls,javafx.fxml",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "/home/desenvolvedor-full-stack/Downloads/JavaFX/openjfx/javafx-sdk-21.0.2/lib/javafx.base.jar",
