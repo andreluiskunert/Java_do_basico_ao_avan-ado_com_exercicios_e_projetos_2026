@@ -1,0 +1,17 @@
+Stage e Scene em JavaFX
+●
+●
+●
+Stage: Representa a janela principal da aplicação JavaFX
+○O Stage é a janela que pode ser exibida na tela, contendo o título, o tamanho e o conteúdo;
+○Pode ser fechado, maximizado, minimizado, e várias janelas (stages) podem ser criadas;
+Scene: Representa o conteúdo dentro de um Stage
+○A Scene contém os elementos visuais (botões, layouts, textos) que serão exibidos ao usuário;
+○Define o tamanho da área de exibição e pode conter um layout com vários componentes;
+Relacionamento entre Stage e Scene
+○O Stage é a "janela", e a Scene é o "conteúdo" dentro dessa janela;
+○Uma Stage pode conter apenas uma Scene de cada vez, mas essa Scene pode ser trocada
+dinamicamente durante a execução da aplicação;
+●Vamos ver na prática!
+●Obs: todo novo arquivo deve ter configurado o vmArgs em launch.json,
+e o nome do arquivo aparece em launch quando executamos ele via Run Java;

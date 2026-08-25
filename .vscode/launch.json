@@ -18,6 +18,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StageSceneExample",
+            "request": "launch",
+            "mainClass": "hellofx.StageSceneExample",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d",
+            "vmArgs": "--module-path /home/desenvolvedor-full-stack/javafx-sdk-21/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
