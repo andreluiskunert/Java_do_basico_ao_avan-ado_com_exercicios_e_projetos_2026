@@ -18,6 +18,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StackPaneExample",
+            "request": "launch",
+            "mainClass": "hellofx.StackPaneExample",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
+            "name": "GridPanExample",
+            "request": "launch",
+            "mainClass": "hellofx.GridPanExample",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
             "name": "BorderPaneExample",
             "request": "launch",
             "mainClass": "hellofx.BorderPaneExample",
