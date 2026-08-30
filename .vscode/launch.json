@@ -18,6 +18,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ComboBoxListViewExample",
+            "request": "launch",
+            "mainClass": "hellofx.ComboBoxListViewExample",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
             "name": "CheckboxRadioButtonExample",
             "request": "launch",
             "mainClass": "hellofx.CheckboxRadioButtonExample",
