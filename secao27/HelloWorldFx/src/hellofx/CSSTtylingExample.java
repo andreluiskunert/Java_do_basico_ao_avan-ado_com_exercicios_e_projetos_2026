@@ -10,31 +10,29 @@ import javafx.scene.layout.*;
 import javafx.stage.*;
 
 
-public class keyboardMouseEventsExample extends Application {
+public class CSSTtylingExample extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         
         
         Label label = new Label("Usei seu teclado.");
-        StackPane root = new StackPane();
-        root.getChildren().add(label);
-      
-        // Teclado
-          root.setOnKeyPressed(event ->{
-            String key = event.getCode().toString();
-            label.setText("Tecla pressionada" + key );
-          });
-        //   Mouse
-        root.setOnMouseClicked(event ->{
-            double x = event.getSceneX();
-            double y = event.getSceneY();
-            label.setText("Mouse clicado em X: " + x + "e Y: " + y);
-        });
+  Label label1 = new Label("Label estilizada");
+
+        label1.getStyleClass().add("label-custom");
 
 
+        Button button = new Button("Botão estilizado");
+
+        button.getStyleClass().add("button-custom");
+
+
+        VBox vbox = new VBox(10);
+
+        vbox.getChildren().addAll(label1, button);
         // Criando uma cena com o layout
-        Scene scene = new Scene(root, 500, 500);
-        scene.setOnKeyPressed(root.getOnKeyPressed());
+        Scene scene = new Scene(vbox, 500, 500);
+      
+        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
 
         // configuração do Stage
         primaryStage.setTitle("_Curso de Java_Hora de Codar_JavaFX");
