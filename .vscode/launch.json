@@ -18,6 +18,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ShapeDrawingExample",
+            "request": "launch",
+            "mainClass": "hellofx.ShapeDrawingExample",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
             "name": "ImageViewExample",
             "request": "launch",
             "mainClass": "hellofx.ImageViewExample",
