@@ -18,6 +18,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SmoothAnimationExample",
+            "request": "launch",
+            "mainClass": "hellofx.SmoothAnimationExample",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
+            "name": "CanvasExample",
+            "request": "launch",
+            "mainClass": "hellofx.CanvasExample",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
             "name": "ShapeDrawingExample",
             "request": "launch",
             "mainClass": "hellofx.ShapeDrawingExample",
