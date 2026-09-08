@@ -11,5 +11,6 @@
         "/home/desenvolvedor-full-stack/Downloads/JavaFX/openjfx/javafx-sdk-21.0.2/lib/javafx.swing.jar",
         "/home/desenvolvedor-full-stack/Downloads/JavaFX/openjfx/javafx-sdk-21.0.2/lib/javafx.web.jar",
         "/home/desenvolvedor-full-stack/Downloads/JavaFX/openjfx/javafx-sdk-21.0.2/lib/javafx-swt.jar"
-    ]
+    ],
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable"
 }
