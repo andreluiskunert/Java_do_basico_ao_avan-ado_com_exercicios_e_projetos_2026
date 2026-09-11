@@ -1,4 +1,4 @@
-package secao28_Calculadora.Calculadora.src;
+
 import javafx.application.*;
 import javafx.stage.*;
 import javafx.scene.*;
@@ -32,18 +32,17 @@ public class Calculadora extends Application {
         display.setMaxWidth(Double.MAX_VALUE);
         VBox.setVgrow(display, Priority.NEVER);
         root.getChildren().add(display);
-
         // Layout dos botoes
-        GridPane grid = new GridPane();
-        grid.setHgap(10);
-        grid.setVgap(10);
-        grid.setPadding(new Insets(10));
-
-        String[] buttons = {
+         GridPane grid = new GridPane();
+         grid.setHgap(10);
+         grid.setVgap(10);
+         grid.setPadding(new Insets(10));
+         String[] buttons = {
             "7", "8", "9", "/",
             "4", "5", "6", "*",
             "1", "2", "3", "-",
-            "0", "C", "=", "+"
+            "0", "C", "=", "+",
+         
         };
 
 
