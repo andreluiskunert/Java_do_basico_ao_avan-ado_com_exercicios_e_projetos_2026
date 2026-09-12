@@ -1,3 +1,5 @@
+package seção29Cronometro.Cronometro.src;
+
 import javafx.animation.*;
 import javafx.application.*;
 import javafx.stage.*;
@@ -8,7 +10,9 @@ import javafx.scene.layout.*;
 import javafx.geometry.Insets;
 
 
-public class Cronometro extends Application {
+
+
+public class Cronometro  extends Application {
 
     private Label timeLabel = new Label("00:00:00");
     private int secondsElapsed = 0;
