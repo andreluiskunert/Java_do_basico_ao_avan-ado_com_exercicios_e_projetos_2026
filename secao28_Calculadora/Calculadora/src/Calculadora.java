@@ -109,6 +109,8 @@ public class Calculadora extends Application {
     }
 
     // realizar o calculo
+    // Sexta-feira_D'Noite, 11/09/2026
+    
     private double calculate(double a, double b, String op) {
 
         switch (op) {

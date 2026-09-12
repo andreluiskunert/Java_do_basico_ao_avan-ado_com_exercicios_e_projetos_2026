@@ -18,6 +18,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Cronometro",
+            "request": "launch",
+            "mainClass": "Cronometro",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
+            "name": "Cronometro",
+            "request": "launch",
+            "mainClass": "secao29_Cronometro.Cronometro.src.Cronometro",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d"
+        },
+        {
+            "type": "java",
             "name": "Calculadora",
             "request": "launch",
             "mainClass": "Calculadora",
