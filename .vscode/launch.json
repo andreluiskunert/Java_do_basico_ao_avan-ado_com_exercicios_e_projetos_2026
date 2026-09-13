@@ -16,6 +16,22 @@
     
     "version": "0.2.0",
     "configurations": [
+        { 
+             "type": "java",
+    "name": "Quiz",
+    "request": "launch",
+    "mainClass": "secao30_Quiz.Quiz.src.Quiz",
+    "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d",
+    "vmArgs": "--module-path /home/desenvolvedor-full-stack/javafx-sdk-21/lib --add-modules javafx.controls"
+        },
+        {
+            "type": "java",
+            "name": "Quiz",
+            "request": "launch",
+            "mainClass": "Quiz",
+            "projectName": "Java_do_basico_ao_avan-ado_com_exercicios_e_projetos_2026_c54930d",
+            "vmArgs": "--module-path /home/desenvolvedor-full-stack/javafx-sdk-21/lib --add-modules javafx.controls Quiz"
+        },
         {
             "type": "java",
             "name": "Cronometro",
